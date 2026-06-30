@@ -103,7 +103,7 @@ export const figures = [
     ]
   },
   {
-    id: 6,
+    id: 7,
     name: 'azucar morena',
     family: 'enchufla',
     video: './videos/azucar morena.mp4',
@@ -123,7 +123,7 @@ export const figures = [
     ]
   },
   {
-    id: 7,
+    id: 8,
     name: '88',
     family: 'sombreros',
     video: './videos/88.mp4',
@@ -138,7 +138,7 @@ export const figures = [
     ]
   },
   {
-    id: 8,
+    id: 9,
     name: 'balcero',
     family: 'sombreros',
     video: './videos/balcero.mp4',
@@ -152,7 +152,7 @@ export const figures = [
     ]
   },
    {
-    id: 9,
+    id: 10,
     name: 'sombrero por derecha',
     family: 'sombreros',
     video: './videos/sombrero por derecha.mp4',
