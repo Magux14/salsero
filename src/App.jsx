@@ -17,14 +17,14 @@ function App() {
         fig.steps.some(step => step.toLowerCase().includes(search.toLowerCase()))
       const matchesFamily = filterFamily === 'todos' || fig.family === filterFamily
       return matchesSearch && matchesFamily
-    })
+    }).sort((a, b) => a.name.localeCompare(b.name))
   }, [search, filterFamily])
 
   return (
     <div className="app">
       <header className="header">
         <h1>💃 Catálogo de Figuras de Salsa</h1>
-        <p>Aprende y practica tus figuras favoritas</p>
+        {/* <p>Aprende y practica tus figuras favoritas</p> */}
       </header>
 
       <div className="controls">

@@ -9,7 +9,7 @@ export default function FigureCard({ figure, onSelect }) {
         <strong>Pasos:</strong>
         <ul>
           {figure.steps.slice(0, 3).map((step, idx) => (
-            <li key={idx}>{step}</li>
+            <li className="step" key={idx}>{idx + 1}. {step}</li>
           ))}
           {figure.steps.length > 3 && <li>...</li>}
         </ul>

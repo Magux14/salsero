@@ -183,20 +183,28 @@ export const figures = [
       'sombrero'
     ]
   },
-  //   {
-  //   id: 12,
-  //   name: '81 2 3',
-  //   family: 'sombreros',
-  //   video: './videos/caracol.mp4',
-  //   steps: [
-  //     'cambio mano, ambas manos se quedan agarradas',
-  //     'enchuflas mientra caminas rotando',
-  //     'enchuflas',
-  //     'randem',
-  //     'enchuflas',
-  //     'sombrero'
-  //   ]
-  // }
+  {
+    id: 12,
+    name: '88 2 3',
+    family: 'sombreros',
+    video: './videos/88 2 3.mp4',
+    steps: [
+      'cambio mano, ambas manos se quedan agarradas',
+      'sombrero para terminar con mano derecha en la espalda',
+      'pasas por bajo de su brazo derecho',
+      'le das la vuela en el sentido en que sales de la vuelta',
+      'enchuflas',
+      'randem con mano izquierda atrás para quedar enfrente de la chica (con ambas manos abajo)',
+      'subes mano derecha y giras a la chica para atrás con ayuda de tu torso',
+      'la desenredas con una vuelta a la izquierda',
+      'le das una vuelta con ambas manos a la derecha',
+      'rodeo rápido para atrás con mano izquierda',
+      'con mano izquierda la giras a la derecha por arriba',
+      'ya que giró bajas la mano derecha para que regrese el giro',
+      'tomas su mano derecha con tu mano derecha y la regresas para que ambos quede enfrente ambas manos',
+      'sombrero'
+    ]
+  },
   {
     id: 13,
     name: 'abanico',
@@ -230,5 +238,36 @@ export const figures = [
       'enchuflas',
       'sombrero',
     ]
-  }
+  },
+  {
+    id: 15,
+    name: 'coca cola',
+    family: 'enchuflas',
+    video: './videos/coca cola.mp4',
+    steps: [
+      'posición de dile que no',
+      'la peinas (dile que no + vuelta) mientras caminas a la posición a donde la estás girando',
+      'cuando llegues a su posición le dices que no',
+    ]
+  },
+  {
+    id: 16,
+    name: '83',
+    family: 'sombreros',
+    video: './videos/88 2 3.mp4',
+    steps: [
+      'cambio mano, ambas manos se quedan agarradas',
+      'sombrero',
+      'marcho marcho marcho',
+      'enchuflo ambas manos',
+      'encesta',
+      'exhibo y dejo mi mano izquierda abajo atrás',
+      'a rodeo',
+      'suelto con mi mano derecha',
+      'con mano izquierda la giras a la derecha por arriba',
+      'ya que giró bajas la mano derecha para que regrese el giro',
+      'tomas su mano derecha con tu mano derecha y la regresas para que ambos quede enfrente ambas manos',
+      'sombrero'
+    ]
+  },
 ];

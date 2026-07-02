@@ -23,7 +23,7 @@ export default function FigureModal({ figure, onClose }) {
             <h3>Pasos de la figura:</h3>
             <ol>
               {figure.steps.map((step, idx) => (
-                <li key={idx}>{step}</li>
+                <li key={idx} className="step">{step}</li>
               ))}
             </ol>
           </div>
