@@ -151,11 +151,11 @@ export const figures = [
       'sombrero',
     ]
   },
-   {
+  {
     id: 10,
-    name: 'sombrero por derecha',
+    name: '82',
     family: 'sombreros',
-    video: './videos/sombrero por derecha.mp4',
+    video: './videos/82.mp4',
     steps: [
       'cambio mano',
       'con ambas manos vuelta a la derecha (nunca se sueltan)',
@@ -167,6 +167,68 @@ export const figures = [
       'giramos para llegar enfrente de ella',
       'enchufla 2 manos',
       'sombrero'
+    ]
+  },
+  {
+    id: 11,
+    name: 'caracol',
+    family: 'sombreros',
+    video: './videos/caracol.mp4',
+    steps: [
+      'cambio mano, ambas manos se quedan agarradas',
+      'enchuflas mientra caminas rotando',
+      'enchuflas',
+      'randem',
+      'enchuflas',
+      'sombrero'
+    ]
+  },
+  //   {
+  //   id: 12,
+  //   name: '81 2 3',
+  //   family: 'sombreros',
+  //   video: './videos/caracol.mp4',
+  //   steps: [
+  //     'cambio mano, ambas manos se quedan agarradas',
+  //     'enchuflas mientra caminas rotando',
+  //     'enchuflas',
+  //     'randem',
+  //     'enchuflas',
+  //     'sombrero'
+  //   ]
+  // }
+  {
+    id: 13,
+    name: 'abanico',
+    family: 'sombreros',
+    video: './videos/abanico.mp4',
+    steps: [
+      'cruzas mano, y solo ocuparás la derecha',
+      'medio sombrero',
+      'terminas con mano en su hombro como si fuera tu novia',
+      'con tu mano izquierda empujas su hombro izquierdo hacia afuera',
+      'randem con una mano',
+      'reposa tu codo sobre tu antebrazo mientras caminan girando',
+      'quitas brazo y la llevas al rodeo en la misma dirección',
+      'enchufla una mano',
+      'enchufla inverso',
+      'dile que no'
+    ]
+  },
+  {
+    id: 14,
+    name: 'enchufla a la cadera 82',
+    family: 'sombreros',
+    video: './videos/enchufla a la cadera 82.mp4',
+    steps: [
+      'cruzas mano',
+      'enchuflas a la cadera por atrás',
+      'repites 2 veces, desde aquí ya no sueltas manos',
+      'mientras tu mano izquierda se queda atrás y abajo tu mano derecha la saca y la gira',
+      'haces randem mientras sigues teniendo tu mano izquierda abajo',
+      'con tu mano izquierda la pasas por adelante de ti mientras te agachas',
+      'enchuflas',
+      'sombrero',
     ]
   }
 ];
