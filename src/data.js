@@ -178,7 +178,7 @@ export const figures = [
       'cambio mano, ambas manos se quedan agarradas',
       'enchuflas mientra caminas rotando',
       'enchuflas',
-      'randem',
+      'randem ambas manos arriba',
       'enchuflas',
       'sombrero'
     ]
