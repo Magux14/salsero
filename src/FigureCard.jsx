@@ -5,7 +5,7 @@ export default function FigureCard({ figure, onSelect }) {
         <h3>{figure.name}</h3>
         <span className="family-badge">{figure.family}</span>
       </div>
-      <div className="steps-preview">
+      {/* <div className="steps-preview">
         <strong>Pasos:</strong>
         <ul>
           {figure.steps.slice(0, 3).map((step, idx) => (
@@ -13,7 +13,7 @@ export default function FigureCard({ figure, onSelect }) {
           ))}
           {figure.steps.length > 3 && <li>...</li>}
         </ul>
-      </div>
+      </div> */}
       <div className="card-footer">
         <button className="view-btn">Ver figura</button>
       </div>

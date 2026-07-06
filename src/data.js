@@ -35,7 +35,7 @@ export const figures = [
   {
     id: 3,
     name: '70',
-    family: 'enchufla',
+    family: 'dile que sí',
     video: './videos/70.mp4',
     steps: [
       'ambas manos, vuelta con mano izquierda arriba hacia AFUERA, mano derecha abajo',
@@ -67,10 +67,11 @@ export const figures = [
   {
     id: 5,
     name: '71',
-    family: 'enchufla',
+    family: 'dile que sí',
     video: './videos/71.mp4',
     steps: [
-      'Inicia como 70 (nunca se sueltan manos)',
+      'posición de dile que si',
+      'inicia como 70 (nunca se sueltan manos)',
       'ambas manos, vuelta con mano izquierda arriba hacia AFUERA, mano derecha abajo',
       'enchuflo ambas manos',
       'codazo mano derecha que repose en tu brazo izquierdo',
@@ -85,9 +86,10 @@ export const figures = [
   {
     id: 6,
     name: '72',
-    family: 'enchufla',
+    family: 'dile que sí',
     video: './videos/72.mp4',
     steps: [
+      'posición de dile que si',
       'Inicia como 70 (nunca se sueltan manos)',
       'ambas manos, vuelta con mano izquierda arriba hacia AFUERA, mano derecha abajo',
       'enchuflo ambas manos',
@@ -268,6 +270,30 @@ export const figures = [
       'ya que giró bajas la mano derecha para que regrese el giro',
       'tomas su mano derecha con tu mano derecha y la regresas para que ambos quede enfrente ambas manos',
       'sombrero'
+    ]
+  },
+   {
+    id: 17,
+    name: '70 habana',
+    family: 'dile que sí',
+    video: './videos/70 habana.mp4',
+    steps: [
+      'cambio a dile que si (2 manos agarradas todo el tiempo)',
+      '70, vuelta ella hacía adentro',
+      'cuando ella termine de girar caminas rodeandola',
+      'cuando llegues a un 80% del lugar original de donde estabas enchuflas',
+      'sigues rodeando y pones tu codo derecho en su brazo derecha como un gancho (lo aseguras) y tu mano quedará sobre tu propio hombro derecho',
+      'los 2 quedarán mirando hacía adelante',
+      'pasas brazo izquierdo por arriba de tu cabeza para quede atrás de tu oreja derecha (aquí se queda)',
+      'pasas brazo derecho a la izquierda por arriba de tu brazo izquierdo hasta abajo',
+      'pasas brazo izquierdo a la derecha de nuevo',
+      'pasas brazo izquierdo a la izquierda de nuevo',
+      'pasas brazo izquierdo a la derecha mientras giras a la derecha para verla a ella',
+      'la das una vuelta y quedarán en posición de 70 de nuevo mientras ambos caminan',
+      'enchuflas',
+      'te peinas con brazo izquierdo (pasas tu mano por encima de tu cabeza a tu oreja izquierda)',
+      'sueltas mano derecha',
+      'dile que no'
     ]
   },
 ];
