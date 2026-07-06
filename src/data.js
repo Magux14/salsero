@@ -244,7 +244,7 @@ export const figures = [
   {
     id: 15,
     name: 'coca cola',
-    family: 'enchuflas',
+    family: 'enchufla',
     video: './videos/coca cola.mp4',
     steps: [
       'posición de dile que no',
