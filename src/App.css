@@ -170,6 +170,18 @@ body {
   text-transform: capitalize;
 }
 
+.family-badge--dile-que-si {
+  background-color: rgb(15, 173, 15);
+}
+
+.family-badge--sombreros {
+  background-color: rgb(201, 111, 8);
+}
+
+.family-badge--enchufla {
+  background-color: rgb(15, 110, 173);
+}
+
 .steps-preview {
   margin-bottom: 15px;
 }

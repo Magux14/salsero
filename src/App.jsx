@@ -10,6 +10,18 @@ function App() {
   const [filterFamily, setFilterFamily] = useState('todos')
 
   const families = ['todos', ...new Set(figures.map(f => f.family))]
+  const getCSSClass = (family) => {
+    switch (family) {
+      case 'dile que sí':
+        return 'dile-que-si';
+      default:
+        return family;
+    }
+  }
+
+  figures.forEach(figure => {
+    figure.cssFamily = getCSSClass(figure.family);
+  });
 
   const filteredFigures = useMemo(() => {
     return figures.filter(fig => {
@@ -19,6 +31,7 @@ function App() {
       return matchesSearch && matchesFamily
     }).sort((a, b) => a.name.localeCompare(b.name))
   }, [search, filterFamily])
+
 
   return (
     <div className="app">

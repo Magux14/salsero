@@ -1,9 +1,11 @@
 export default function FigureCard({ figure, onSelect }) {
+
+
   return (
     <div className="figure-card" onClick={() => onSelect(figure)}>
       <div className="card-header">
         <h3>{figure.name}</h3>
-        <span className="family-badge">{figure.family}</span>
+        <span className={`family-badge family-badge--${figure.cssFamily}`}>{figure.family}</span>
       </div>
       {/* <div className="steps-preview">
         <strong>Pasos:</strong>

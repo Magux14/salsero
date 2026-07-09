@@ -8,7 +8,7 @@ export default function FigureModal({ figure, onClose }) {
 
         <div className="modal-header">
           <h2>{figure.name}</h2>
-          <span className="family-badge">{figure.family}</span>
+          <span className={`family-badge family-badge--${figure.cssFamily}`}>{figure.family}</span>
         </div>
 
         <div className="modal-body">
