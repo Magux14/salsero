@@ -272,7 +272,7 @@ export const figures = [
       'sombrero'
     ]
   },
-   {
+  {
     id: 17,
     name: '70 habana',
     family: 'dile que sí',
@@ -293,6 +293,52 @@ export const figures = [
       'enchuflas',
       'te peinas con brazo izquierdo (pasas tu mano por encima de tu cabeza a tu oreja izquierda)',
       'sueltas mano derecha',
+      'dile que no'
+    ]
+  },
+  {
+    id: 18,
+    name: 'enchufla inverso doble',
+    family: 'enchufla',
+    video: './videos/enchufla inverso doble.mp4',
+    steps: [
+      'enchufla normal con mano izquierda (la mano en posición de spiderman 🤟🏼)',
+      'en tiempo 5 le das 2 vueltas más mientras la diriges a tu derecha y la atrapas con mano derecha',
+      'dile que no',
+    ]
+  },
+  {
+    id: 19,
+    name: 'el 2',
+    family: 'sombreros',
+    video: './videos/el 2.mp4',
+    steps: [
+      'cambias de mano (que tu mano derecha esté con su mano izquierda)',
+      'llevas tu mano derecha hacia abajo para que cuando ella de la vuelta quedes detrás de ella',
+      'agarras su mano izquierda con tu mano izquierda (ya estás detrás de ella)',
+      'continua agarrandola mientras caminas a la derecha mientras ella camina a la izquierda',
+      'continua agarrandola mientras caminas a la izquierda mientras ella camina a la derecha',
+      'en timpo 3 levantas tu mano izquierda para avisarle que vas a entrar mienrtas sueltas tu mano derecha',
+      'con pie izquierdo entras por su lado izquierdo mientras giras a tu izquierda',
+      'te vas a mover para quedar delante de ella y vuelves a agarrar su mano derecha con tu mano derecha',
+      'ahora estás tu adelante y ella atrás',
+      'continua agarrandola mientras caminas a la derecha mientras ella camina a la izquierda',
+      'continua agarrandola mientras caminas a la izquierda mientras ella camina a la derecha y en tiempo 8 levantas tu mano derecha para llevarla enfrente de ti',
+      'sombrero'
+    ]
+  },
+  {
+    id: 20,
+    name: '7 y coca cola',
+    family: 'dile que sí',
+    video: './videos/7 y coca cola.mp4',
+    steps: [
+      'posición de dile que si',
+      ' jalas tu mano hacia ti y a la izquierda',
+      'la chica girará enrollándose hacía ti mágicamente (en serio no se como ellas sabrán eso)',
+      'cuando se enrrolle tu mano derecha quedará en su omoplato derecho',
+      'la empujas tantito con tu mano derecha para que dse desenrolle mientras le das impulso con tu mano izquieda',
+      'cuando esté desenrrollada seiguiendo el sentido le darás una vuelta',
       'dile que no'
     ]
   },
