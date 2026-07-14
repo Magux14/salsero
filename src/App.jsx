@@ -13,7 +13,9 @@ function App() {
   const getCSSClass = (family) => {
     switch (family) {
       case 'dile que sí':
-        return 'dile-que-si';
+        return 'dile-que-si'; break;
+         case 'dile que no':
+        return 'dile-que-no'; break;
       default:
         return family;
     }

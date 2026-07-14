@@ -182,6 +182,10 @@ body {
   background-color: rgb(15, 110, 173);
 }
 
+.family-badge--dile-que-no {
+  background-color: rgb(95, 27, 32);
+}
+
 .steps-preview {
   margin-bottom: 15px;
 }

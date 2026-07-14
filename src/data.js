@@ -341,4 +341,52 @@ export const figures = [
       'dile que no'
     ]
   },
+  {
+    id: 21,
+    name: 'especula',
+    family: 'dile que sí',
+    video: './videos/especula.mp4',
+    steps: [
+      'posición de dile que si (ambas manos no se sueltan)',
+      'enchufla con ambas manos',
+      'marcho marcho marcho a la derecha',
+      'con tu mano izquierda enchuflala hacia adentro y pasala a tu derecha mientras tu mano derecha queda abajo y atrás de ella',
+      'bajas mano izquierda solo para "pendulear"',
+      'exhibes con mano izquierda',
+      'con tu mano derecha echúflala hacia afuerza para que quede de tu lazo izquierdo mientras tu mano derecha queda abajo y atrás de ella',
+      'bajas mano derecha solo para "pendulear"',
+      'exhibes con mano derecha para quedar viéndose de frente de nuevo',
+      'sencilla (sueltas mano derecha) ->',
+      'con tu mano izquierda levantas su mano derecha, caminas hacia adelante girando a la izquierda para estar ahora en su lugar',
+      '(repites) con tu mano izquierda levantas su mano derecha, caminas hacia adelante girando a la izquierda para estar ahora en su lugar',
+      'dile que no',
+    ]
+  },
+  {
+    id: 22,
+    name: 'exhíbe y abrela',
+    family: 'dile que no',
+    video: './videos/exhíbe y abrela.mp4',
+    steps: [
+      'comienzas en posición dile que no',
+      '(exhibe) tu mano izquierda sube su mano derecha mientras empujas hacia tu izquierda',
+      'tu camnias un poco a la derecha para darle espacio mientras bajas la mano izquierda',
+      'y como si fuera un rueda tu mano izquierda volvera a subir en la misma dirección (o sea en dirección a tu espalda) hasta que vueltas a llegar con tu mano izquierda abajo',
+      'Ella dará otra vuelta con este giro de rueda vertical de tu mano dejándolos en posición "Abierta".',
+    ]
+  },
+  {
+    id: 23,
+    name: 'acuéstala',
+    family: 'dile que no',
+    video: './videos/acuéstala.mp4',
+    steps: [
+      'dile que no',
+      'peínala',
+      'tu mano derecha pasará su hombro derecho',
+      'tu mano izquierda pasará a su hombro izquierdo',
+      'la ladeas levemente hacia la izquierda y hacia abajo',
+      'La mujer no se tiene que confiar que tal que se avienta y se mata :s, todo leve, todo cool'
+    ]
+  },
 ];
