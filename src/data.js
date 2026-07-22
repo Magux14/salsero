@@ -389,4 +389,56 @@ export const figures = [
       'La mujer no se tiene que confiar que tal que se avienta y se mata :s, todo leve, todo cool'
     ]
   },
+  {
+    id: 24,
+    name: '90',
+    family: 'dile que sí',
+    video: './videos/90.mp4',
+    steps: [
+      'Hacemos un 70 (ver video de 70 si tienes dudas)',
+      'enchuflas ambos brazos (se quedan así sin soltar)',
+      'con tu mano izquierda levantas su mano derecha (tu mano derecha permanece abajo)',
+      'pasas por abajo de su brazo izquierdo levantado mientras giras hacia tu izquierda',
+      'quedarán en una posición donde tu tienes tu mano derecha en la espalda y mano izquierda agarrando su meno derecha en escuadra',
+      'levantas tu mano izquierda mientras caminas a tu izquierda para que ella quede contigo espalda con espalda',
+      'al hacer esta caminata vas a levantar tu mano derecha mientras bajas la izquierda',
+      'terminarás viendola a ella tu un poco hacia la izquierda y ella hacia la derecha (aun tienes tu mano derecha arriba)',
+      'caminas hacia adelante mientras giras a la izquierda para quedar mirando de frente ahora si cara a cara',
+      'enchuflas a 2 manos',
+      'haces randem (ojo tu mano derecha debe estar tocando tu hombro izquierdo) para terminar en posición de dile que no',
+      'dile que no'
+    ]
+  },
+   {
+    id: 25,
+    name: 'coca mentira',
+    family: 'enchufla',
+    video: './videos/coca mentira.mp4',
+    womanKnowledge: true,
+    steps: [
+      'enclufa mientras cambias de lugar con ella',
+      'dile que no mientras tu te pasas a la izquierda y ella a la derecha',
+      'en el tiempo 5 le vas agarrar su hombro derecho con tu mano izquierda para terminar de girarla',
+      'vas a poner tu mano derecha en su hombro derecho para frenarla y quede totalmente delante de ti (ahora tienes ambas manos en sus hombros)',
+      'con ambas manos la vas a girar hacia la derecha y la sueltas',
+      'la chica aquí tiene que girar ella solita 2 vueltas (tiene que saber ella no hay forma de marcarle esto bien)',
+      'al finalizar la segunda vuelta la chica debe levantar las manos para hacer un adorno',
+      'la cachas con tu mano derecha',
+      'dile que no'
+    ]
+  },
+     {
+    id: 26,
+    name: 'vacila tu pollo',
+    family: 'dile que sí',
+    video: './videos/vacila tu pollo.mp4',
+    womanKnowledge: true,
+    steps: [
+      'en posición de dile que si con tu mano derecha lleva la chica a tu pecho',
+      'penduleando baja tu mano izquierda hacia abajo para darle impulso y que ella gire hacia afuera soltándole la mano',
+      'ella girará por si sola 2 veces y levantá los brazos para hacer un adorno',
+      'cáchala en la segunda vuelta',
+      'dile que no',
+    ]
+  },
 ];

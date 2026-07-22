@@ -46,7 +46,7 @@ function App() {
         <div className="search-box">
           <input
             type="text"
-            placeholder="Buscar por nombre o paso..."
+            placeholder="Ingresa nombre de la figura..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             className="search-input"

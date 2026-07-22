@@ -5,7 +5,13 @@ export default function FigureCard({ figure, onSelect }) {
     <div className="figure-card" onClick={() => onSelect(figure)}>
       <div className="card-header">
         <h3>{figure.name}</h3>
-        <span className={`family-badge family-badge--${figure.cssFamily}`}>{figure.family}</span>
+        <div className="family-badge-container">
+          {
+            figure.womanKnowledge &&
+            <small className={`family-badge family-badge--woman`}>♀ Mujer</small>
+          }
+          <small className={`family-badge family-badge--${figure.cssFamily}`}>{figure.family}</small>
+        </div>
       </div>
       {/* <div className="steps-preview">
         <strong>Pasos:</strong>
