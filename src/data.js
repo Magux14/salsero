@@ -409,7 +409,7 @@ export const figures = [
       'dile que no'
     ]
   },
-   {
+  {
     id: 25,
     name: 'coca mentira',
     family: 'enchufla',
@@ -427,7 +427,7 @@ export const figures = [
       'dile que no'
     ]
   },
-     {
+  {
     id: 26,
     name: 'vacila tu pollo',
     family: 'dile que sí',
@@ -439,6 +439,56 @@ export const figures = [
       'ella girará por si sola 2 veces y levantá los brazos para hacer un adorno',
       'cáchala en la segunda vuelta',
       'dile que no',
+    ]
+  },
+  {
+    id: 27,
+    name: 'tijeras',
+    family: 'dile que sí',
+    video: './videos/tijeras.mp4',
+    steps: [
+      'Haces un 70 en tu lugar (no lo caminas)',
+      'enchuflas (ambas manos) mientras intercambias lugar con ella',
+      'metes un randem para quedar enfrente de ella (quedarán abrazados tu miras hacia adelante y ella mira en la misma dirección atrás de ti)',
+      'sueltas ambas manos por que andan medio doblados',
+      'vuelves a agarrar manos en una posición más natural',
+      'te mueves a la izquierda y hacía atrás mientras levantas tu mano derecha (tiempo 3) para dejarla pasar hacía adelante',
+      'en tiempo 5 la regresas hacia atrás y bajas tu mano mientras tu caminas a la derecha y adelante (para quedar al centro de nuevo)',
+      'te mueves a la derecha y hacía atrás mientras levantas tu mano izquierda (tiempo 3) para dejarla pasar hacía adelante',
+      'en tiempo 5 la regresas hacia atrás y bajas tu mano mientras tu caminas a la izquierda y adelante (para quedar al centro de nuevo)',
+      'sueltas mano izquierda',
+      'la exhibes con tu mano derecha y la corronas',
+      'dile que no (o conecta otro paso)'
+    ]
+  },
+  {
+    id: 28,
+    name: 'vayamos por debajo',
+    family: 'sombreros',
+    video: './videos/vayamos por debajo.mp4',
+    steps: [
+      'Hace un medio sombrero (son tu mano derecha agarras su mano derecha)',
+      'le das una vuelta hacia la derecha pasándola a tu lado derecho',
+      'la coronas (otra vuelta para que tu mano derecha quedé en su hombro derecho como si fueras su novio',
+      'le pides su mano izquierda con tu mano izquierda',
+      'dejas tu mano izquierda enfrente de ti a la altura de tu abdomen',
+      'con tu mano derecha la llevas al rodeo moviéndola a tu lado izquierdo',
+      'la chica tiene que pasar por atrás de ti (tu mano izquierda queda en tu espalda)',
+      'la llevas al rodeo de nuevo, pero esta vez tu te agachas para que su mano izquierda (la que está agarrando tu mano izquierda que está en tu espalda) pase por arriba de ti',
+      'la enchuflas',
+      'terminas con una finalización de sombrero',
+    ]
+  },
+    {
+    id: 29,
+    name: 'paseo abierto',
+    family: 'dile que no',
+    video: './videos/paseo abierto.mp4',
+    steps: [
+      'le haces un dile que no, pero esta vez cuando ella está pasando tu te vas a ir hacia adelante y la izquierda de inmediato',
+      'luego te meterás en tu camino mientras giras la izquierda y cambiarás de mano (ahora tu mano derecha agarra su mano derecha)',
+      'ya que estás a su izquierda la pasas con tu mano derecha para que ella quede a tu lado izquierdo (ella girará intuitivamente por como la jalas con tu mano derecha)',
+      'mientras ella está pasando y girando var a cambiar mano para que ahora tu estés agarrando su mano derecha con tu mano izquierda',
     ]
   },
 ];
