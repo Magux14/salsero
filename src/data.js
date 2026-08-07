@@ -479,7 +479,7 @@ export const figures = [
       'terminas con una finalización de sombrero',
     ]
   },
-    {
+  {
     id: 29,
     name: 'paseo abierto',
     family: 'dile que no',
@@ -489,6 +489,44 @@ export const figures = [
       'luego te meterás en tu camino mientras giras la izquierda y cambiarás de mano (ahora tu mano derecha agarra su mano derecha)',
       'ya que estás a su izquierda la pasas con tu mano derecha para que ella quede a tu lado izquierdo (ella girará intuitivamente por como la jalas con tu mano derecha)',
       'mientras ella está pasando y girando var a cambiar mano para que ahora tu estés agarrando su mano derecha con tu mano izquierda',
+    ]
+  },
+  {
+    id: 30,
+    name: '90 ajiaco',
+    family: 'dile que sí',
+    advanced: true,
+    video: './videos/90 ajiaco.mp4',
+    steps: [
+      'Haces un 70 caminado',
+      'enchuflas para que queden viendose de frente',
+      'levantas tu mano izquierda (que está agarrando su mano derecha) y caminas para pasar por debajo su brazo',
+      'ya que pasaste mirando hacia el mismo lugar vas a bajar tu man izquierda para hacerte a ti mismo manita de puerco (tu mano izquierda quedará en tu espalda)',
+      'bajarás tu torso y girarás hacia la derecha hasta pasar por debajo de su brazo',
+      'cuando ya pases levantarás tu brazo derecho y con mucho CUIDADO vas a poner tu mano derecha atrás de tu cabeza para posteriormente insertar tu codo derecho en el antebrazo de la chica',
+      'giran los 2 en esa misma posición de enganchamiento',
+      'quitas codo, te la llevas a rodeo por tu izquierda con la mano derecha',
+      'enchuflas',
+      'hace un randem (como final de kentucky)',
+      'le dices que no',
+    ]
+  },
+  {
+    id: 31,
+    name: 'leodio',
+    family: 'dile que sí',
+    video: './videos/leodio.mp4',
+    advanced: true,
+    steps: [
+      'Haces un 70 caminado',
+      'hace sun randem tu mano ziquierda arriba para terminar viendo en la dirección opuesta abrazados (ella te está abrazando por detrás',
+      'subes mano izquierda y la pasas a tu espalda como manita de puerco',
+      'con MUCHO CUIDADO levantas mano derecha, la pegas a tu cabeza mientras giras a la derecha para posteriormente insertar tu codo derecho en el antebrazo de la chica',
+      'giran los 2 en esa misma posición de enganchamiento',
+      'quitas codo, te la llevas a rodeo por tu izquierda con la mano derecha',
+      'enchuflas',
+      'hace un randem (como final de kentucky)',
+      'le dices que no',
     ]
   },
 ];

@@ -10,17 +10,21 @@ export default function FigureModal({ figure, onClose }) {
           <h2>{figure.name}</h2>
           <div className="family-badge-container">
             {
+              figure.advanced &&
+              <small className={`family-badge family-badge--advanced`}>Avanzados</small>
+            }
+            {
               figure.womanKnowledge &&
               <small className={`family-badge family-badge--woman`}>♀ Mujer</small>
             }
             <small className={`family-badge family-badge--${figure.cssFamily}`}>{figure.family}</small>
           </div>
-           {
-              figure.womanKnowledge &&
-              <small>La mujer debe hacer un paso por su cuenta</small>
-            }
+          {
+            figure.womanKnowledge &&
+            <small>La mujer debe hacer un paso por su cuenta</small>
+          }
         </div>
-        
+
 
         <div className="modal-body">
           <div className="video-container">

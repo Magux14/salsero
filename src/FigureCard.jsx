@@ -7,6 +7,10 @@ export default function FigureCard({ figure, onSelect }) {
         <h3>{figure.name}</h3>
         <div className="family-badge-container">
           {
+            figure.advanced &&
+            <small className={`family-badge family-badge--advanced`}>Avanzados</small>
+          }
+          {
             figure.womanKnowledge &&
             <small className={`family-badge family-badge--woman`}>♀ Mujer</small>
           }

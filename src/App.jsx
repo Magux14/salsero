@@ -14,7 +14,7 @@ function App() {
     switch (family) {
       case 'dile que sí':
         return 'dile-que-si'; break;
-         case 'dile que no':
+      case 'dile que no':
         return 'dile-que-no'; break;
       default:
         return family;
@@ -31,7 +31,7 @@ function App() {
         fig.steps.some(step => step.toLowerCase().includes(search.toLowerCase()))
       const matchesFamily = filterFamily === 'todos' || fig.family === filterFamily
       return matchesSearch && matchesFamily
-    }).sort((a, b) => a.name.localeCompare(b.name))
+    }).sort((a, b) => b.id - a.id);
   }, [search, filterFamily])
 
 

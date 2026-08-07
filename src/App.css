@@ -199,6 +199,11 @@ body {
   align-self: flex-end;
 }
 
+.family-badge--advanced{
+  background-color: rgb(49, 23, 196);
+  align-self: flex-end;
+}
+
 .steps-preview {
   margin-bottom: 15px;
 }
