@@ -16,7 +16,7 @@ export default function FigureModal({ figure, onClose }) {
           <h2>{figure.name}</h2>
 
           <div className="aditional-info-container">
-          {renderDifficulty(figure.difficulty)}
+            {renderDifficulty(figure.difficulty)}
 
             <div className="family-badge-container">
               {
@@ -27,16 +27,26 @@ export default function FigureModal({ figure, onClose }) {
                 figure.womanKnowledge &&
                 <small className={`family-badge family-badge--woman`}>♀ Mujer</small>
               }
+              {
+                figure.onlyCuban &&
+                <small className={`family-badge family-badge--rueda`}>Rueda</small>
+              }
               <small className={`family-badge family-badge--${figure.cssFamily}`}>{figure.family}</small>
             </div>
-          
+
           </div>
-            {
-              figure.womanKnowledge &&
-              <div>
-                <small>La follower debe hacer pasos por su cuenta</small>
-              </div>
-            }
+          {
+            figure.womanKnowledge &&
+            <div>
+              <small>La follower debe hacer pasos por su cuenta</small>
+            </div>
+          }
+             {
+            figure.onlyCuban &&
+            <div className="only-cuban-info">
+              <small>Esto solo te servirá en ruedas de salsa cubana</small>
+            </div>
+          }
         </div>
 
 

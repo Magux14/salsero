@@ -18,6 +18,10 @@ export default function FigureCard({ figure, onSelect }) {
               figure.womanKnowledge &&
               <small className={`family-badge family-badge--woman`}>♀ Mujer</small>
             }
+            {
+              figure.onlyCuban &&
+              <small className={`family-badge family-badge--rueda`}>Rueda</small>
+            }
             <small className={`family-badge family-badge--${figure.cssFamily}`}>{figure.family}</small>
           </div>
         </div>

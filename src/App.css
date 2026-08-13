@@ -145,7 +145,7 @@ body {
 }
 
 .difficulty-container {
-  flex: 65%;
+  flex: 68%;
   display: flex;
   align-items: center;
   gap: 5px;
@@ -162,6 +162,23 @@ body {
   h2, h3 {
     text-transform: capitalize;
   }
+}
+
+.filter-family-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.show-wheel-checkbox {
+  display: flex;
+  align-items: center;
+}
+
+input[type="checkbox"] {
+  margin: 5px;
+  width: 1.5em;
+  height: 1.5em;
 }
 
 .aditional-info-container {
@@ -214,6 +231,15 @@ body {
 .family-badge--woman{
   background-color: rgb(211, 80, 189);
   align-self: flex-end;
+}
+
+.family-badge--rueda{
+  background-color: rgb(104, 33, 133);
+  align-self: flex-end;
+}
+
+.only-cuban-info {
+  color: rgb(216, 133, 216);
 }
 
 .family-badge--advanced{
@@ -405,7 +431,7 @@ body {
   }
 
   .filter-box {
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   .figures-grid {

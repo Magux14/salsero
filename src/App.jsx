@@ -6,8 +6,9 @@ import './App.css'
 
 function App() {
   const [search, setSearch] = useState('')
-  const [selectedFigure, setSelectedFigure] = useState(null)
-  const [filterFamily, setFilterFamily] = useState('todos')
+  const [selectedFigure, setSelectedFigure] = useState(null);
+  const [filterFamily, setFilterFamily] = useState('todos');
+  const [showWheel, setShowWheel] = useState(true);
 
   const families = ['todos', ...new Set(figures.map(f => f.family))]
   const getCSSClass = (family) => {
@@ -26,13 +27,18 @@ function App() {
   });
 
   const filteredFigures = useMemo(() => {
-    return figures.filter(fig => {
+    let filteredFigures = [...figures];
+    if (!showWheel) {
+      filteredFigures = [...filteredFigures.filter(fig => !fig.onlyCuban)];
+    }
+
+    return filteredFigures.filter(fig => {
       const matchesSearch = fig.name.toLowerCase().includes(search.toLowerCase()) ||
         fig.steps.some(step => step.toLowerCase().includes(search.toLowerCase()))
       const matchesFamily = filterFamily === 'todos' || fig.family === filterFamily
       return matchesSearch && matchesFamily
     }).sort((a, b) => b.id - a.id);
-  }, [search, filterFamily])
+  }, [search, filterFamily, showWheel]);
 
 
   return (
@@ -54,15 +60,22 @@ function App() {
         </div>
 
         <div className="filter-box">
-          <label>Familia:</label>
-          <select value={filterFamily} onChange={(e) => setFilterFamily(e.target.value)}>
-            {families.map(family => (
-              <option key={family} value={family}>
-                {family.charAt(0).toUpperCase() + family.slice(1)}
-              </option>
-            ))}
-          </select>
+          <div className="filter-family-container">
+            <label>Familia:</label>
+            <select value={filterFamily} onChange={(e) => setFilterFamily(e.target.value)}>
+              {families.map(family => (
+                <option key={family} value={family}>
+                  {family.charAt(0).toUpperCase() + family.slice(1)}
+                </option>
+              ))}
+            </select>
+          </div>
+          <label className="show-wheel-checkbox">
+            <span >Rueda:</span>
+            <input type="checkbox" checked={showWheel} onChange={() => setShowWheel(!showWheel)} />
+          </label>
         </div>
+
       </div>
 
       <div className="results-info">
