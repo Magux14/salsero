@@ -519,7 +519,7 @@ export const figures = [
     advanced: true,
     steps: [
       'Haces un 70 caminado',
-      'hace sun randem tu mano ziquierda arriba para terminar viendo en la dirección opuesta abrazados (ella te está abrazando por detrás',
+      'hace sun randem tu mano ziquierda arriba para terminar viendo en la dirección opuesta abrazados (ella te está abrazando por detrás)',
       'subes mano izquierda y la pasas a tu espalda como manita de puerco',
       'con MUCHO CUIDADO levantas mano derecha, la pegas a tu cabeza mientras giras a la derecha para posteriormente insertar tu codo derecho en el antebrazo de la chica',
       'giran los 2 en esa misma posición de enganchamiento',
@@ -527,6 +527,21 @@ export const figures = [
       'enchuflas',
       'hace un randem (como final de kentucky)',
       'le dices que no',
+    ]
+  },
+  {
+    id: 32,
+    name: '70 complicado',
+    family: 'dile que sí',
+    video: './videos/70 complicado.mp4',
+    advanced: true,
+    steps: [
+      'haces un 70 caminado',
+      'levantas tu mano izquierda agarrando su mano derecha y pasas por abajo y te posicionas a su derecha (tu mano derecha termina atrás de tu espalda y tu mano izquierda enfrente de su cara)',
+      'metes randem',
+      'enchuflas',
+      'metes randem',
+      'dile que no',
     ]
   },
 ];

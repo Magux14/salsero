@@ -28,7 +28,7 @@ export default function FigureModal({ figure, onClose }) {
 
         <div className="modal-body">
           <div className="video-container">
-            <video controls width="100%" loop autoPlay>
+            <video controls width="100%" loop autoPlay preload="none">
               <source src={figure.video} type="video/mp4" />
               Tu navegador no soporta videos HTML5
             </video>
