@@ -144,15 +144,31 @@ body {
   box-shadow: 0 8px 16px rgba(233, 30, 99, 0.2);
 }
 
+.difficulty-container {
+  flex: 65%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
 .card-header {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: start;
   margin-bottom: 15px;
+  gap: 5px;
 
   h2, h3 {
     text-transform: capitalize;
   }
+}
+
+.aditional-info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .card-header h3 {
@@ -162,6 +178,7 @@ body {
 }
 
 .family-badge-container {
+  width: 100%;
   display: flex;
   justify-content: flex-end;
   gap: 10px;
@@ -173,7 +190,7 @@ body {
   color: white;
   padding: 4px 12px;
   border-radius: 20px;
-  font-size: 0.rem;
+  font-size: .8rem;
   font-weight: 600;
   text-transform: capitalize;
 }
@@ -314,9 +331,9 @@ body {
 .modal-header {
   padding: 30px 30px 15px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 15px;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 5px;
   border-bottom: 2px solid var(--border);
 
   h2 {

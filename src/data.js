@@ -1,9 +1,13 @@
+
+// URL de videos:
+// https://archive.org/details/salsero_202608/salsero/70+habana.mp4
+
 export const figures = [
   {
     id: 1,
     name: 'azucar',
     family: 'enchufla',
-    video: './videos/azucar.mp4',
+    difficulty: 2,
     steps: [
       'enchufla ambas manos',
       'encesto',
@@ -20,7 +24,7 @@ export const figures = [
     id: 2,
     name: 'resbaladilla',
     family: 'enchufla',
-    video: './videos/resbaladilla.mp4',
+    difficulty: 2,
     steps: [
       'enchufla mano izquierda',
       'mano izquierda sube a tu cabeza, luego al hombro y sueltas',
@@ -36,7 +40,7 @@ export const figures = [
     id: 3,
     name: '70',
     family: 'dile que sí',
-    video: './videos/70.mp4',
+    difficulty: 1,
     steps: [
       'ambas manos, vuelta con mano izquierda arriba hacia AFUERA, mano derecha abajo',
       'enchuflo ambas manos',
@@ -50,8 +54,8 @@ export const figures = [
   {
     id: 4,
     name: 'kentucky',
+    difficulty: 2,
     family: 'enchufla',
-    video: './videos/kentucky.mp4',
     steps: [
       'enchufla ambas manos (siempre juntas)',
       'enchufla izquierda, me abro a la izquierda mano derecha tiene que estar tocando espalda chica',
@@ -67,8 +71,8 @@ export const figures = [
   {
     id: 5,
     name: '71',
+    difficulty: 3,
     family: 'dile que sí',
-    video: './videos/71.mp4',
     steps: [
       'posición de dile que si',
       'inicia como 70 (nunca se sueltan manos)',
@@ -87,7 +91,7 @@ export const figures = [
     id: 6,
     name: '72',
     family: 'dile que sí',
-    video: './videos/72.mp4',
+    difficulty: 3,
     steps: [
       'posición de dile que si',
       'Inicia como 70 (nunca se sueltan manos)',
@@ -108,7 +112,7 @@ export const figures = [
     id: 7,
     name: 'azucar morena',
     family: 'enchufla',
-    video: './videos/azucar morena.mp4',
+    difficulty: 3,
     steps: [
       'enchufla ambas manos',
       'encesto',
@@ -128,7 +132,7 @@ export const figures = [
     id: 8,
     name: '88',
     family: 'sombreros',
-    video: './videos/88.mp4',
+    difficulty: 3,
     steps: [
       'cambio mano',
       'con ambas manos vuelta a la derecha (baja mano derecha al final)',
@@ -143,7 +147,7 @@ export const figures = [
     id: 9,
     name: 'balcero',
     family: 'sombreros',
-    video: './videos/balcero.mp4',
+    difficulty: 1,
     steps: [
       'cambio mano',
       'con ambas manos vuelta a la derecha (nunca se sueltan)',
@@ -157,7 +161,7 @@ export const figures = [
     id: 10,
     name: '82',
     family: 'sombreros',
-    video: './videos/82.mp4',
+    difficulty: 3,
     steps: [
       'cambio mano',
       'con ambas manos vuelta a la derecha (nunca se sueltan)',
@@ -175,7 +179,7 @@ export const figures = [
     id: 11,
     name: 'caracol',
     family: 'sombreros',
-    video: './videos/caracol.mp4',
+    difficulty: 2,
     steps: [
       'cambio mano, ambas manos se quedan agarradas',
       'enchuflas mientra caminas rotando',
@@ -189,7 +193,7 @@ export const figures = [
     id: 12,
     name: '88 2 3',
     family: 'sombreros',
-    video: './videos/88 2 3.mp4',
+    difficulty: 4,
     steps: [
       'cambio mano, ambas manos se quedan agarradas',
       'sombrero para terminar con mano derecha en la espalda',
@@ -211,7 +215,7 @@ export const figures = [
     id: 13,
     name: 'abanico',
     family: 'sombreros',
-    video: './videos/abanico.mp4',
+    difficulty: 3,
     steps: [
       'cruzas mano, y solo ocuparás la derecha',
       'medio sombrero',
@@ -229,7 +233,7 @@ export const figures = [
     id: 14,
     name: 'enchufla a la cadera 82',
     family: 'sombreros',
-    video: './videos/enchufla a la cadera 82.mp4',
+    difficulty: 3,
     steps: [
       'cruzas mano',
       'enchuflas a la cadera por atrás',
@@ -245,7 +249,7 @@ export const figures = [
     id: 15,
     name: 'coca cola',
     family: 'enchufla',
-    video: './videos/coca cola.mp4',
+    difficulty: 2,
     steps: [
       'posición de dile que no',
       'la peinas (dile que no + vuelta) mientras caminas a la posición a donde la estás girando',
@@ -256,7 +260,7 @@ export const figures = [
     id: 16,
     name: '83',
     family: 'sombreros',
-    video: './videos/83.mp4',
+    difficulty: 3,
     steps: [
       'cambio mano, ambas manos se quedan agarradas',
       'sombrero',
@@ -275,7 +279,7 @@ export const figures = [
     id: 17,
     name: '70 habana',
     family: 'dile que sí',
-    video: './videos/70 habana.mp4',
+    difficulty: 4,
     steps: [
       'cambio a dile que si (2 manos agarradas todo el tiempo)',
       '70, vuelta ella hacía adentro',
@@ -299,7 +303,7 @@ export const figures = [
     id: 18,
     name: 'enchufla inverso doble',
     family: 'enchufla',
-    video: './videos/enchufla inverso doble.mp4',
+    difficulty: 1,
     steps: [
       'enchufla normal con mano izquierda (la mano en posición de spiderman 🤟🏼)',
       'en tiempo 5 le das 2 vueltas más mientras la diriges a tu derecha y la atrapas con mano derecha',
@@ -310,7 +314,7 @@ export const figures = [
     id: 19,
     name: 'el 2',
     family: 'sombreros',
-    video: './videos/el 2.mp4',
+    difficulty: 3,
     steps: [
       'cambias de mano (que tu mano derecha esté con su mano izquierda)',
       'llevas tu mano derecha hacia abajo para que cuando ella de la vuelta quedes detrás de ella',
@@ -330,7 +334,7 @@ export const figures = [
     id: 20,
     name: '7 y coca cola',
     family: 'dile que sí',
-    video: './videos/7 y coca cola.mp4',
+    difficulty: 2,
     steps: [
       'posición de dile que si',
       ' jalas tu mano hacia ti y a la izquierda',
@@ -345,7 +349,7 @@ export const figures = [
     id: 21,
     name: 'especula',
     family: 'dile que sí',
-    video: './videos/especula.mp4',
+    difficulty: 3,
     steps: [
       'posición de dile que si (ambas manos no se sueltan)',
       'enchufla con ambas manos',
@@ -366,7 +370,7 @@ export const figures = [
     id: 22,
     name: 'exhíbe y abrela',
     family: 'dile que no',
-    video: './videos/exhíbe y abrela.mp4',
+    difficulty: 1,
     steps: [
       'comienzas en posición dile que no',
       '(exhibe) tu mano izquierda sube su mano derecha mientras empujas hacia tu izquierda',
@@ -379,7 +383,7 @@ export const figures = [
     id: 23,
     name: 'acuéstala',
     family: 'dile que no',
-    video: './videos/acuéstala.mp4',
+    difficulty: 1,
     steps: [
       'dile que no',
       'peínala',
@@ -393,7 +397,7 @@ export const figures = [
     id: 24,
     name: '90',
     family: 'dile que sí',
-    video: './videos/90.mp4',
+    difficulty: 4,
     steps: [
       'Hacemos un 70 (ver video de 70 si tienes dudas)',
       'enchuflas ambos brazos (se quedan así sin soltar)',
@@ -413,8 +417,8 @@ export const figures = [
     id: 25,
     name: 'coca mentira',
     family: 'enchufla',
-    video: './videos/coca mentira.mp4',
     womanKnowledge: true,
+    difficulty: 2,
     steps: [
       'enclufa mientras cambias de lugar con ella',
       'dile que no mientras tu te pasas a la izquierda y ella a la derecha',
@@ -431,8 +435,8 @@ export const figures = [
     id: 26,
     name: 'vacila tu pollo',
     family: 'dile que sí',
-    video: './videos/vacila tu pollo.mp4',
     womanKnowledge: true,
+    difficulty: 1,
     steps: [
       'en posición de dile que si con tu mano derecha lleva la chica a tu pecho',
       'penduleando baja tu mano izquierda hacia abajo para darle impulso y que ella gire hacia afuera soltándole la mano',
@@ -445,7 +449,7 @@ export const figures = [
     id: 27,
     name: 'tijeras',
     family: 'dile que sí',
-    video: './videos/tijeras.mp4',
+    difficulty: 3,
     steps: [
       'Haces un 70 en tu lugar (no lo caminas)',
       'enchuflas (ambas manos) mientras intercambias lugar con ella',
@@ -465,7 +469,7 @@ export const figures = [
     id: 28,
     name: 'vayamos por debajo',
     family: 'sombreros',
-    video: './videos/vayamos por debajo.mp4',
+    difficulty: 3,
     steps: [
       'Hace un medio sombrero (son tu mano derecha agarras su mano derecha)',
       'le das una vuelta hacia la derecha pasándola a tu lado derecho',
@@ -483,7 +487,7 @@ export const figures = [
     id: 29,
     name: 'paseo abierto',
     family: 'dile que no',
-    video: './videos/paseo abierto.mp4',
+    difficulty: 2,
     steps: [
       'le haces un dile que no, pero esta vez cuando ella está pasando tu te vas a ir hacia adelante y la izquierda de inmediato',
       'luego te meterás en tu camino mientras giras la izquierda y cambiarás de mano (ahora tu mano derecha agarra su mano derecha)',
@@ -495,8 +499,7 @@ export const figures = [
     id: 30,
     name: '90 ajiaco',
     family: 'dile que sí',
-    advanced: true,
-    video: './videos/90 ajiaco.mp4',
+    difficulty: 4,
     steps: [
       'Haces un 70 caminado',
       'enchuflas para que queden viendose de frente',
@@ -513,10 +516,9 @@ export const figures = [
   },
   {
     id: 31,
-    name: 'leodio',
+    name: 'leonrio',
     family: 'dile que sí',
-    video: './videos/leodio.mp4',
-    advanced: true,
+    difficulty: 4,
     steps: [
       'Haces un 70 caminado',
       'hace sun randem tu mano ziquierda arriba para terminar viendo en la dirección opuesta abrazados (ella te está abrazando por detrás)',
@@ -533,8 +535,7 @@ export const figures = [
     id: 32,
     name: '70 complicado',
     family: 'dile que sí',
-    video: './videos/70 complicado.mp4',
-    advanced: true,
+    difficulty: 3,
     steps: [
       'haces un 70 caminado',
       'levantas tu mano izquierda agarrando su mano derecha y pasas por abajo y te posicionas a su derecha (tu mano derecha termina atrás de tu espalda y tu mano izquierda enfrente de su cara)',

@@ -1,5 +1,11 @@
+import { renderDifficulty } from "./components/Flame";
+
 export default function FigureModal({ figure, onClose }) {
   if (!figure) return null;
+
+  const getCurrentUrl = (name) => {
+    return `https://archive.org/download/salsero_202608/salsero/${encodeURIComponent(name)}.mp4`
+  }
 
   return (
     <div className="modal-overlay" onClick={onClose}>
@@ -8,28 +14,36 @@ export default function FigureModal({ figure, onClose }) {
 
         <div className="modal-header">
           <h2>{figure.name}</h2>
-          <div className="family-badge-container">
-            {
-              figure.advanced &&
-              <small className={`family-badge family-badge--advanced`}>Avanzados</small>
-            }
+
+          <div className="aditional-info-container">
+          {renderDifficulty(figure.difficulty)}
+
+            <div className="family-badge-container">
+              {
+                figure.advanced &&
+                <small className={`family-badge family-badge--advanced`}>Avanzados</small>
+              }
+              {
+                figure.womanKnowledge &&
+                <small className={`family-badge family-badge--woman`}>♀ Mujer</small>
+              }
+              <small className={`family-badge family-badge--${figure.cssFamily}`}>{figure.family}</small>
+            </div>
+          
+          </div>
             {
               figure.womanKnowledge &&
-              <small className={`family-badge family-badge--woman`}>♀ Mujer</small>
+              <div>
+                <small>La follower debe hacer pasos por su cuenta</small>
+              </div>
             }
-            <small className={`family-badge family-badge--${figure.cssFamily}`}>{figure.family}</small>
-          </div>
-          {
-            figure.womanKnowledge &&
-            <small>La mujer debe hacer un paso por su cuenta</small>
-          }
         </div>
 
 
         <div className="modal-body">
           <div className="video-container">
             <video controls width="100%" loop autoPlay preload="none">
-              <source src={figure.video} type="video/mp4" />
+              <source src={getCurrentUrl(figure.name)} type="video/mp4" />
               Tu navegador no soporta videos HTML5
             </video>
           </div>

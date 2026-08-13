@@ -1,3 +1,5 @@
+import { renderDifficulty } from "./components/Flame";
+
 export default function FigureCard({ figure, onSelect }) {
 
 
@@ -5,16 +7,19 @@ export default function FigureCard({ figure, onSelect }) {
     <div className="figure-card" onClick={() => onSelect(figure)}>
       <div className="card-header">
         <h3>{figure.name}</h3>
-        <div className="family-badge-container">
-          {
-            figure.advanced &&
-            <small className={`family-badge family-badge--advanced`}>Avanzados</small>
-          }
-          {
-            figure.womanKnowledge &&
-            <small className={`family-badge family-badge--woman`}>♀ Mujer</small>
-          }
-          <small className={`family-badge family-badge--${figure.cssFamily}`}>{figure.family}</small>
+        <div className="aditional-info-container">
+          {renderDifficulty(figure.difficulty)}
+          <div className="family-badge-container">
+            {
+              figure.advanced &&
+              <small className={`family-badge family-badge--advanced`}>Avanzados</small>
+            }
+            {
+              figure.womanKnowledge &&
+              <small className={`family-badge family-badge--woman`}>♀ Mujer</small>
+            }
+            <small className={`family-badge family-badge--${figure.cssFamily}`}>{figure.family}</small>
+          </div>
         </div>
       </div>
       {/* <div className="steps-preview">
