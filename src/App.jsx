@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect } from 'react'
 import { figures } from './data'
 import FigureCard from './FigureCard'
 import FigureModal from './FigureModal'
@@ -39,6 +39,21 @@ function App() {
       return matchesSearch && matchesFamily
     }).sort((a, b) => b.id - a.id);
   }, [search, filterFamily, showWheel]);
+
+  const goToSpecificFigureByParam = () => {
+    const params = new URLSearchParams(window.location.search);
+    const figureId = params.get("id");
+    if(figureId){
+      const figure = figures.find(fig => fig.id == figureId);
+      if (figure) {
+        setSelectedFigure(figure);
+      }
+    }
+  }
+
+  useEffect(( )=> {
+    goToSpecificFigureByParam();
+  }, []);
 
 
   return (

@@ -420,6 +420,35 @@ input[type="checkbox"] {
   color: var(--primary);
 }
 
+.modal-actions {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.button--download {
+  background-color: rgb(15, 18, 206);
+}
+
+.button--share {
+  background-color: rgb(0, 105, 56);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .header h1 {
