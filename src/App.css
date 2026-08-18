@@ -238,6 +238,11 @@ input[type="checkbox"] {
   align-self: flex-end;
 }
 
+.family-badge--adorno{
+  background-color: rgb(133, 123, 33);
+  align-self: flex-end;
+}
+
 .only-cuban-info {
   color: rgb(216, 133, 216);
 }

@@ -516,7 +516,7 @@ export const figures = [
   },
   {
     id: 31,
-    name: 'leonrio',
+    name: 'leoncio',
     family: 'dile que sí',
     difficulty: 4,
     steps: [
@@ -613,6 +613,19 @@ export const figures = [
       'vas a caminar donde está el próximo hombre',
       'durante ese recorrido vas a girar junto con la chica en posicion de dile que no unos 180° (en otras palabras vas a terminar viendo a la direccion contraria de donde estabas originalmente)',
       'repites infinitamente hasta que te den otra instrucción',
+    ]
+  },
+   {
+    id: 36,
+    name: 'que te rodee',
+    family: 'dile que no',
+    ornament: true,
+    difficulty: 1,
+    steps: [
+      'dile que no, pero esta vez la pegas a tu cuerpo mientras levantas el brazo izquierdo',
+      'cuando ella vaya pasando, con tu mano derecha pegas su brazo izquierdo a tu cuerpo',
+      'cuando ella vaya por tu espalda bajas brazo izquierdo pero no tan fuerte para que ella siga pegada a tu cuerpo mientras levantas brazo derecho',
+      'dile que no',
     ]
   },
 ];

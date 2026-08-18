@@ -31,6 +31,10 @@ export default function FigureModal({ figure, onClose }) {
                 figure.onlyCuban &&
                 <small className={`family-badge family-badge--rueda`}>Rueda</small>
               }
+              {
+                figure.ornament &&
+                <small className={`family-badge family-badge--adorno`}>Adorno</small>
+              }
               <small className={`family-badge family-badge--${figure.cssFamily}`}>{figure.family}</small>
             </div>
 
@@ -41,7 +45,7 @@ export default function FigureModal({ figure, onClose }) {
               <small>La follower debe hacer pasos por su cuenta</small>
             </div>
           }
-             {
+          {
             figure.onlyCuban &&
             <div className="only-cuban-info">
               <small>Esto solo te servirá en ruedas de salsa cubana</small>

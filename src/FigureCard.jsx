@@ -22,6 +22,10 @@ export default function FigureCard({ figure, onSelect }) {
               figure.onlyCuban &&
               <small className={`family-badge family-badge--rueda`}>Rueda</small>
             }
+            {
+              figure.ornament &&
+              <small className={`family-badge family-badge--adorno`}>Adorno</small>
+            }
             <small className={`family-badge family-badge--${figure.cssFamily}`}>{figure.family}</small>
           </div>
         </div>
