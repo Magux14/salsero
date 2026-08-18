@@ -84,16 +84,16 @@ export default function FigureModal({ figure, onClose }) {
             </video>
           </div>
 
+          <div className="steps-list">
+            
           <div className="modal-actions">
-            <button className=" button button--download" onClick={() => share()}>
-              Compartir video <FaCreativeCommonsShare />
+            <button className="button button--download" onClick={() => share()}>
+              Compartir <FaCreativeCommonsShare />
             </button>
             <button className="button button--share" onClick={() => downloadVideo()}>
-              Descargar <IoMdDownload /> <IoLogoAndroid />
+              Descargar <IoMdDownload />
             </button>
           </div>
-
-          <div className="steps-list">
             <h3>Pasos de la figura:</h3>
             <ol>
               {figure.steps.map((step, idx) => (

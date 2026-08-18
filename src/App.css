@@ -423,19 +423,21 @@ input[type="checkbox"] {
 .modal-actions {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   gap: 10px;
+  margin-bottom: 20px;
 }
 
 .button {
   display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 10px 20px;
+  gap: 5px;
+  padding: 8px 10px;
+  font-size: 1rem;
   background-color: var(--primary);
   color: white;
   border: none;
   border-radius: 6px;
-  font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
   transition: transform 0.2s, background-color 0.3s;
