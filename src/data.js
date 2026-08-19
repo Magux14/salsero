@@ -499,7 +499,7 @@ export const figures = [
     id: 30,
     name: '90 ajiaco',
     family: 'dile que sí',
-    difficulty: 4,
+    difficulty: 5,
     steps: [
       'Haces un 70 caminado',
       'enchuflas para que queden viendose de frente',
@@ -518,7 +518,7 @@ export const figures = [
     id: 31,
     name: 'leoncio',
     family: 'dile que sí',
-    difficulty: 4,
+    difficulty: 5,
     steps: [
       'Haces un 70 caminado',
       'hace sun randem tu mano ziquierda arriba para terminar viendo en la dirección opuesta abrazados (ella te está abrazando por detrás)',
@@ -549,7 +549,7 @@ export const figures = [
     id: 33,
     name: 'azucar mascabada',
     family: 'enchufla',
-    difficulty: 4,
+    difficulty: 5,
     steps: [
       'enchuflas',
       'encentas',
@@ -602,7 +602,7 @@ export const figures = [
       'dile que no',
     ]
   },
-    {
+  {
     id: 35,
     name: 'saloneo',
     family: 'dile que no',
@@ -615,7 +615,7 @@ export const figures = [
       'repites infinitamente hasta que te den otra instrucción',
     ]
   },
-   {
+  {
     id: 36,
     name: 'que te rodee',
     family: 'dile que no',
@@ -625,6 +625,25 @@ export const figures = [
       'dile que no, pero esta vez la pegas a tu cuerpo mientras levantas el brazo izquierdo',
       'cuando ella vaya pasando, con tu mano derecha pegas su brazo izquierdo a tu cuerpo',
       'cuando ella vaya por tu espalda bajas brazo izquierdo pero no tan fuerte para que ella siga pegada a tu cuerpo mientras levantas brazo derecho',
+      'dile que no',
+    ]
+  },
+  {
+    id: 37,
+    name: 'como manolin',
+    family: 'enchufla',
+    difficulty: 2,
+    steps: [
+      'enchuflas mientras cambias de lugar con ella y cambias mano',
+      'pasas al centro',
+      'mueves tu brazo derecho de derecha a izquierda por encima de tu cabeza',
+      'tiempo 1 comienzas derecha',
+      'tiempo 5 estás en izquierda',
+      'para nuevamente en tiempo 1 estar comenzando en derecha',
+      'repites este movimiento de brazo',
+      'cuando este nuevamente en tiempo 1 te gireas hacia tu derecha para verla a ella y te enchuflas a ti mismo hacia tu izquierda',
+      'la echuflas a ella',
+      'cambias mano',
       'dile que no',
     ]
   },

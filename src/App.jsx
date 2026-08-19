@@ -33,11 +33,10 @@ function App() {
     }
 
     return filteredFigures.filter(fig => {
-      const matchesSearch = fig.name.toLowerCase().includes(search.toLowerCase()) ||
-        fig.steps.some(step => step.toLowerCase().includes(search.toLowerCase()))
+      const matchesSearch = fig.name.toLowerCase().includes(search.toLowerCase());
       const matchesFamily = filterFamily === 'todos' || fig.family === filterFamily
       return matchesSearch && matchesFamily
-    }).sort((a, b) => b.id - a.id);
+    }).sort((a, b) => b.difficulty - a.difficulty);
   }, [search, filterFamily, showWheel]);
 
   const goToSpecificFigureByParam = () => {
