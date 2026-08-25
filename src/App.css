@@ -29,6 +29,13 @@ body {
   margin: 0 auto;
 }
 
+.related-figures {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
 .header {
   text-align: center;
   margin-bottom: 20px;

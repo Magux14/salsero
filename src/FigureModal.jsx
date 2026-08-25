@@ -1,6 +1,8 @@
 import { renderDifficulty } from "./components/Flame";
 import { IoMdDownload } from "react-icons/io";
 import { FaCreativeCommonsShare } from "react-icons/fa";
+import { figures } from "./data";
+import { Link } from "lucide-react";
 
 export default function FigureModal({ figure, onClose }) {
   if (!figure) return null;
@@ -27,6 +29,10 @@ export default function FigureModal({ figure, onClose }) {
     link.click();
     link.remove();
   };
+
+  const getFigureNameById = (id) => {
+    return figures.find((f) => f.id === id)?.name || "Figura desconocida";
+  }
 
   return (
     <div className="modal-overlay" onClick={onClose}>
@@ -84,15 +90,26 @@ export default function FigureModal({ figure, onClose }) {
           </div>
 
           <div className="steps-list">
-            
-          <div className="modal-actions">
-            <button className="button button--download" onClick={() => share()}>
-              Compartir <FaCreativeCommonsShare />
-            </button>
-            <button className="button button--share" onClick={() => downloadVideo()}>
-              Descargar <IoMdDownload />
-            </button>
-          </div>
+
+            <div className="modal-actions">
+              <button className="button button--download" onClick={() => share()}>
+                Compartir <FaCreativeCommonsShare />
+              </button>
+              <button className="button button--share" onClick={() => downloadVideo()}>
+                Descargar <IoMdDownload />
+              </button>
+            </div>
+            {
+              figure.relatedIds &&
+              <div className="related-figures">
+                <h3>Figuras relacionadas:</h3>
+                  {figure.relatedIds.map((relatedId, idx) => (
+                      <a href={`?id=${relatedId}`} style={{ color: '#27F5E7', textTransform: 'capitalize' }} key={idx}>
+                        {getFigureNameById(relatedId)}
+                      </a>
+                  ))}
+              </div>
+            }
             <h3>Pasos de la figura:</h3>
             <ol>
               {figure.steps.map((step, idx) => (
