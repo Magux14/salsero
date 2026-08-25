@@ -647,4 +647,36 @@ export const figures = [
       'dile que no',
     ]
   },
+  {
+    id: 38,
+    name: 'europa',
+    family: 'sombreros',
+    difficulty: 5,
+    new: true,
+    steps: [
+      'vas a hacer lo que quieras para quedar en posición de 82 (mano izquierda atrá sbien pegada a tu espalda lo más arriba que puedas y mano derecha con su mano derecha, ella atrás a la derecha de ti).',
+      'vas a bajar tu cuerpo rotando a la derecha para pasar por debajo de su brazo izquierdo',
+      'cuando pases su brazo vas a seguir rotando y vas a levantar tu brazo derecho para posicionar tu codo en su antebrazo izquierdo (no sueltes la otra mano)',
+      'hace un paseillo (rotan los 2 una hasta quedar en el mismo lugar)',
+      'tu brazo derecho lo pasas por arriba de tu cabeza para que quede enfrente de ti sin soltarla',
+      'enchuflas ambas manos',
+      'sombrero',
+    ]
+  },
+    {
+    id: 39,
+    name: 'la ola',
+    family: 'enchufla',
+    difficulty: 2,
+    new: true,
+    steps: [
+      'enchufla mientras intercambian posición (tu quedarás a la izquierda)',
+      'cuando vayas a terminar ese enchuflamiento vas a cambiar de mano para que queden en saludo de macho',
+      'manteniendo el saludo de macho vas a rotar con ella hasta que vuelvas a llegar a la derecha',
+      'ahora con tu mano izquierda vas a agarrar su omóplato izquierdo para mandarla a la derecha como un paseo largo mientras igual la jalas con tu mano derecha',
+      'ya que ella esté a la derecha agarrarás su man izquierda con tu mano izquierda para que no se muevan mientras levantas tu mano derecha sobre su cabeza para "peinarla"',
+      'tu mano izquierda levantará su brazo para que te peine a ti',
+      'con tu mano derecha en su omóplato derecho la enviarás al dile que no',
+    ]
+  },
 ];

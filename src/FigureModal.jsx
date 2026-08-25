@@ -1,6 +1,5 @@
 import { renderDifficulty } from "./components/Flame";
 import { IoMdDownload } from "react-icons/io";
-import { IoLogoAndroid } from "react-icons/io";
 import { FaCreativeCommonsShare } from "react-icons/fa";
 
 export default function FigureModal({ figure, onClose }) {

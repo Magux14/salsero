@@ -36,7 +36,7 @@ function App() {
       const matchesSearch = fig.name.toLowerCase().includes(search.toLowerCase());
       const matchesFamily = filterFamily === 'todos' || fig.family === filterFamily
       return matchesSearch && matchesFamily
-    }).sort((a, b) => b.difficulty - a.difficulty);
+    }).sort((a, b) => (b.new === true) - (a.new === true) || b.difficulty - a.difficulty);
   }, [search, filterFamily, showWheel]);
 
   const goToSpecificFigureByParam = () => {

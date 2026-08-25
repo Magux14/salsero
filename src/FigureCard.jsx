@@ -26,6 +26,10 @@ export default function FigureCard({ figure, onSelect }) {
               figure.ornament &&
               <small className={`family-badge family-badge--adorno`}>Adorno</small>
             }
+            {
+              figure.new &&
+              <small className={`family-badge family-badge--adorno`}>¡Nueva!</small>
+            }
             <small className={`family-badge family-badge--${figure.cssFamily}`}>{figure.family}</small>
           </div>
         </div>
