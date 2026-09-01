@@ -13,6 +13,7 @@ const getFigureNameById = (id) =>
   figures.find((f) => f.id === id)?.name || "Figura desconocida";
 
 const MISSING_VIDEO_PHONE = "+525531004755";
+const MISSING_VIDEO_WHATSAPP_URL = `https://wa.me/${MISSING_VIDEO_PHONE}`;
 
 export default function FigureModal({ figure, onClose }) {
   const [videoError, setVideoError] = useState(false);
@@ -22,11 +23,6 @@ export default function FigureModal({ figure, onClose }) {
   }, [figure?.id]);
 
   if (!figure) return null;
-
-  const copyMissingVideoPhone = () => {
-    navigator.clipboard.writeText(MISSING_VIDEO_PHONE);
-    alert("Número copiado en el portapapeles");
-  };
 
   const share = () => {
     const url = `https://magux14.github.io/salsero?id=${figure.id}`;
@@ -75,9 +71,14 @@ export default function FigureModal({ figure, onClose }) {
         <div className="modal-body">
           <div className="video-container">
             {videoError ? (
-              <button type="button" className="video-fallback" onClick={copyMissingVideoPhone}>
-                Parece que no tengo este vídeo, ¿tú lo tienes? si es así por favor mándamelo a {MISSING_VIDEO_PHONE}
-              </button>
+              <a
+                href={MISSING_VIDEO_WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="video-fallback"
+              >
+                Parece que no tengo este vídeo, ¿tú lo tienes? si es así por favor mándamelo a {MISSING_VIDEO_PHONE} (click aquí para abrir WhatsApp) y lo subiré a la página. ¡Gracias!
+              </a>
             ) : (
               <video controls width="100%" loop autoPlay preload="none" onError={() => setVideoError(true)}>
                 <source src={getVideoUrl(figure.name)} type="video/mp4" />
