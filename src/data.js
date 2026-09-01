@@ -777,4 +777,57 @@ export const figures = [
       'salida de sombrero'
     ]
   },
+  {
+    id: 46,
+    name: 'changuereo',
+    family: 'enchufla',
+    difficulty: 2,
+    tags: ['new', 'secureForDancing'],
+    steps: [
+      'Este es un pequeño paso que se puede conectar con varios, pero normalmente eschuflas',
+      'al finalizar cambias mano y agarras con mano derecha como saludo de macho',
+      'penduleas tu codo derecho alzando hasta arriba',
+      'bajas mano derecha regresando el péndulo y la subes de nuevo mientras das la vuelta completa hacia la izquierda (tu espalda rosará con la espalda de la chica)',
+      'puedes terminar con un enchufla',
+    ]
+  },
+  {
+    id: 47,
+    name: 'torniquete',
+    family: 'enchufla',
+    difficulty: 1,
+    tags: ['secureForDancing'],
+    steps: [
+      'cambias mano',
+      'enchuflas con derecha',
+      'cambias mano a izquierda',
+      'giras tu solito a tu derecha sin soltar mano izquierda',
+      'cuando llegues con mano derecha sueltas izquierda',
+    ]
+  },
+  {
+    id: 48,
+    name: 'sombrero doble con avioneta',
+    family: 'sombreros',
+    difficulty: 4,
+    tags: ['new'],
+    relatedIds: [46, 47],
+    steps: [
+      'haces sombrero',
+      'al terminar sombrero sin soltarte pasas tu mano derecha enfrente de la cabeza de la chica',
+      'la jalas hacia adentro para que gire como trompo',
+      'la tienes como evelyn (quien es evelyn no se) pero tu mano izquierda va a deter tu omóplato izquierdo',
+      'haces un changuereo',
+      'al terminar chacnguereo caminas por su izquierda para terminar enfrente de ella dándola la espalda mientras pasas tu mano derecha como puerquito detrás de ti',
+      'bajas al 88 pasando por su brazo izquierdo (tu giras hacia la izquierda y hacia abajo)',
+      'la sacas (le das una vuelta a ella para el lado opuesto de enchufla)',
+      'antes de que termine es vuelta de ella vas a meter un randem',
+      'al final del randum tu codo derecho va a terminar en su antebrazo derecho',
+      'rotan haciendo un paseito moviendo las manos como si tuviera un abanico',
+      'la llevas a rodeo por artás de ti con  tu mano derecha pasándo a ella la izquierda',
+      'enchuflas con mano derecha',
+      'torniquete',
+      'al terminar mano derecha a la espalda de la chica para el dile que no',
+    ]
+  },
 ];
