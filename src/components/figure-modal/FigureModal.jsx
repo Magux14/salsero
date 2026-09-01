@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { IoMdDownload } from "react-icons/io";
 import { FaCreativeCommonsShare } from "react-icons/fa";
 import { figures } from "../../data";
@@ -11,8 +12,21 @@ const getVideoUrl = (name) =>
 const getFigureNameById = (id) =>
   figures.find((f) => f.id === id)?.name || "Figura desconocida";
 
+const MISSING_VIDEO_PHONE = "+525531004755";
+
 export default function FigureModal({ figure, onClose }) {
+  const [videoError, setVideoError] = useState(false);
+
+  useEffect(() => {
+    setVideoError(false);
+  }, [figure?.id]);
+
   if (!figure) return null;
+
+  const copyMissingVideoPhone = () => {
+    navigator.clipboard.writeText(MISSING_VIDEO_PHONE);
+    alert("Número copiado en el portapapeles");
+  };
 
   const share = () => {
     const url = `https://magux14.github.io/salsero?id=${figure.id}`;
@@ -51,7 +65,7 @@ export default function FigureModal({ figure, onClose }) {
               <small>Esto solo te servirá en ruedas de salsa cubana</small>
             </div>
           )}
-          {hasTag(figure, "secureToDance") && (
+          {hasTag(figure, "secureForDancing") && (
             <div className="secure-to-dance-info">
               <small>Esta figura la puedes utilizar con personas que no bailan salsa, las que NO puedes utilizar con personas normales son las figures que utilicen "70s", "sombreros", "dile que no", "dile que si", "exhibela", más que nada solo puedes utilizar "enchuflas", lo que tienes que hacer es modificarla un poco para bailar con DIAGONALES adaptándola</small>
             </div>
@@ -60,20 +74,31 @@ export default function FigureModal({ figure, onClose }) {
 
         <div className="modal-body">
           <div className="video-container">
-            <video controls width="100%" loop autoPlay preload="none">
-              <source src={getVideoUrl(figure.name)} type="video/mp4" />
-              Tu navegador no soporta videos HTML5
-            </video>
+            {videoError ? (
+              <button type="button" className="video-fallback" onClick={copyMissingVideoPhone}>
+                Parece que no tengo este vídeo, ¿tú lo tienes? si es así por favor mándamelo a {MISSING_VIDEO_PHONE}
+              </button>
+            ) : (
+              <video controls width="100%" loop autoPlay preload="none" onError={() => setVideoError(true)}>
+                <source src={getVideoUrl(figure.name)} type="video/mp4" />
+                Tu navegador no soporta videos HTML5
+              </video>
+            )}
           </div>
 
           <div className="steps-list">
             <div className="modal-actions">
-              <button className="button button--download" onClick={share}>
-                Compartir <FaCreativeCommonsShare />
-              </button>
-              <button className="button button--share" onClick={downloadVideo}>
-                Descargar <IoMdDownload />
-              </button>
+              {
+                !videoError &&
+                <>
+                  <button className="button button--download" onClick={share}>
+                    Compartir <FaCreativeCommonsShare />
+                  </button>
+                  <button className="button button--share" onClick={downloadVideo}>
+                    Descargar <IoMdDownload />
+                  </button>
+                </>
+              }
             </div>
             {figure.relatedIds && (
               <div className="related-figures">

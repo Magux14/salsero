@@ -8,10 +8,10 @@ const TAG_BADGES = {
   onlyCuban: { label: "Rueda", modifier: "rueda" },
   ornament: { label: "Adorno", modifier: "adorno" },
   new: { label: "¡Nueva!", modifier: "adorno" },
-  secureToDance: { label: "NO bailo salsa", modifier: "secure-for-dancing" },
+  secureForDancing: { label: "NO bailo salsa", modifier: "secure-for-dancing" },
 };
 
-const TAG_ORDER = ["advanced", "womanKnowledge", "onlyCuban", "ornament", "new", "secureToDance"];
+const TAG_ORDER = ["advanced", "womanKnowledge", "onlyCuban", "ornament", "new", "secureForDancing"];
 
 export default function FigureBadges({ figure, showNewBadge = true }) {
   const tags = figure.tags || [];

@@ -56,7 +56,7 @@ export const figures = [
     name: 'kentucky',
     difficulty: 2,
     family: 'enchufla',
-    tags: ['secureToDance'],
+    tags: ['secureForDancing'],
     steps: [
       'enchufla ambas manos (siempre juntas)',
       'enchufla izquierda, me abro a la izquierda mano derecha tiene que estar tocando espalda chica',
@@ -305,7 +305,7 @@ export const figures = [
     name: 'enchufla inverso doble',
     family: 'enchufla',
     difficulty: 1,
-    tags: ['secureToDance'],
+    tags: ['secureForDancing'],
     steps: [
       'enchufla normal con mano izquierda (la mano en posición de spiderman 🤟🏼)',
       'en tiempo 5 le das 2 vueltas más mientras la diriges a tu derecha y la atrapas con mano derecha',
@@ -736,6 +736,45 @@ export const figures = [
     ],
     relatedIds: [
       39,
+    ]
+  },
+  {
+    id: 43,
+    name: 'randem',
+    family: 'enchufla',
+    difficulty: 1,
+    tags: ['secureForDancing'],
+    steps: [
+      'enchuflas',
+      'cuando ella esté girando vas a girar a tu derecha pasando tu pié derecho hacia atrás como una leve patada que llegue a la pocisión de tu pie izquierdo',
+      'mientras haces esto levatarás tu mano izquierda hacia arriba',
+      'dile que no'
+    ]
+  },
+  {
+    id: 44,
+    name: 'sencilla',
+    family: 'enchufla',
+    difficulty: 1,
+    tags: ['secureForDancing'],
+    steps: [
+      'enchuflas',
+      'caminas hacia delante levantando brazo izquierdo (te enchuflas)',
+      'la enchuflas de nuevo'
+    ]
+  },
+  {
+    id: 45,
+    name: 'enchufla a la cadera',
+    family: 'enchufla',
+    difficulty: 1,
+    tags: ['secureForDancing'],
+    steps: [
+      'enchuflas pero al hacerlo bajas la mano izquierda',
+      'ella estará como con manita de puerco, agarras su mano izquierda con tu mano izquierda',
+      'haces diangonales atrás de ellas (las que quieras)',
+      'para salir, cuando tú estés a la derecha levantas brazo derecho para girarla soltando mano izquierda',
+      'salida de sombrero'
     ]
   },
 ];
