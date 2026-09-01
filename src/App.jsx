@@ -1,8 +1,11 @@
 import { useState, useMemo, useEffect } from 'react'
 import { figures } from './data'
-import FigureCard from './FigureCard'
-import FigureModal from './FigureModal'
-import './App.css'
+import { hasTag } from './utils/tags'
+import AppHeader from './components/app-header/AppHeader'
+import FigureFilters from './components/figure-filters/FigureFilters'
+import FigureGrid from './components/figure-grid/FigureGrid'
+import FigureModal from './components/figure-modal/FigureModal'
+import './App.scss'
 
 function App() {
   const [search, setSearch] = useState('')
@@ -10,107 +13,46 @@ function App() {
   const [filterFamily, setFilterFamily] = useState('todos');
   const [showWheel, setShowWheel] = useState(true);
 
-  const families = ['todos', ...new Set(figures.map(f => f.family))]
-  const getCSSClass = (family) => {
-    switch (family) {
-      case 'dile que sí':
-        return 'dile-que-si'; break;
-      case 'dile que no':
-        return 'dile-que-no'; break;
-      default:
-        return family;
-    }
-  }
-
-  figures.forEach(figure => {
-    figure.cssFamily = getCSSClass(figure.family);
-  });
+  const families = useMemo(() => ['todos', ...new Set(figures.map(f => f.family))], []);
 
   const filteredFigures = useMemo(() => {
-    let filteredFigures = [...figures];
-    if (!showWheel) {
-      filteredFigures = [...filteredFigures.filter(fig => !fig.onlyCuban)];
-    }
+    const visibleFigures = showWheel ? figures : figures.filter(fig => !hasTag(fig, 'onlyCuban'));
 
-    return filteredFigures.filter(fig => {
-      const matchesSearch = fig.name.toLowerCase().includes(search.toLowerCase());
-      const matchesFamily = filterFamily === 'todos' || fig.family === filterFamily
-      return matchesSearch && matchesFamily
-    }).sort((a, b) => (b.new === true) - (a.new === true) || b.difficulty - a.difficulty);
+    return visibleFigures
+      .filter(fig => {
+        const matchesSearch = fig.name.toLowerCase().includes(search.toLowerCase());
+        const matchesFamily = filterFamily === 'todos' || fig.family === filterFamily
+        return matchesSearch && matchesFamily
+      })
+      .sort((a, b) => (hasTag(b, 'new') - hasTag(a, 'new')) || b.difficulty - a.difficulty);
   }, [search, filterFamily, showWheel]);
 
-  const goToSpecificFigureByParam = () => {
+  useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const figureId = params.get("id");
-    if(figureId){
+    if (figureId) {
       const figure = figures.find(fig => fig.id == figureId);
       if (figure) {
         setSelectedFigure(figure);
       }
     }
-  }
-
-  useEffect(( )=> {
-    goToSpecificFigureByParam();
   }, []);
-
 
   return (
     <div className="app">
-      <header className="header">
-        <h1>💃 Catálogo de Figuras de Salsa</h1>
-        {/* <p>Aprende y practica tus figuras favoritas</p> */}
-      </header>
+      <AppHeader />
 
-      <div className="controls">
-        <div className="search-box">
-          <input
-            type="text"
-            placeholder="Ingresa nombre de la figura..."
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            className="search-input"
-          />
-        </div>
+      <FigureFilters
+        search={search}
+        onSearchChange={setSearch}
+        families={families}
+        filterFamily={filterFamily}
+        onFilterFamilyChange={setFilterFamily}
+        showWheel={showWheel}
+        onShowWheelChange={() => setShowWheel(!showWheel)}
+      />
 
-        <div className="filter-box">
-          <div className="filter-family-container">
-            <label>Familia:</label>
-            <select value={filterFamily} onChange={(e) => setFilterFamily(e.target.value)}>
-              {families.map(family => (
-                <option key={family} value={family}>
-                  {family.charAt(0).toUpperCase() + family.slice(1)}
-                </option>
-              ))}
-            </select>
-          </div>
-          <label className="show-wheel-checkbox">
-            <span >Rueda:</span>
-            <input type="checkbox" checked={showWheel} onChange={() => setShowWheel(!showWheel)} />
-          </label>
-        </div>
-
-      </div>
-
-      <div className="results-info">
-        <p>{filteredFigures.length} figura(s) encontrada(s)</p>
-      </div>
-
-      <div className="figures-grid">
-        {filteredFigures.length > 0 ? (
-          filteredFigures.map(figure => (
-            <FigureCard
-              key={figure.id}
-              figure={figure}
-              onSelect={setSelectedFigure}
-            />
-          ))
-        ) : (
-          <div className="no-results">
-            <p>No se encontraron figuras. Intenta con otra búsqueda.</p>
-          </div>
-        )}
-      </div>
+      <FigureGrid figures={filteredFigures} onSelect={setSelectedFigure} />
 
       <FigureModal figure={selectedFigure} onClose={() => setSelectedFigure(null)} />
     </div>

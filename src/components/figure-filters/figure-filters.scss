@@ -1,0 +1,96 @@
+.figure-filters {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.search-box {
+  flex: 1;
+  min-width: 250px;
+  max-width: 500px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 1rem;
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  background-color: var(--bg-secondary);
+  color: var(--text);
+  transition: border-color 0.3s;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.search-input::placeholder {
+  color: var(--text-light);
+}
+
+.filter-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.filter-box label {
+  color: var(--text);
+  font-weight: 500;
+}
+
+.filter-box select {
+  padding: 10px 12px;
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  background-color: var(--bg-secondary);
+  color: var(--text);
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+.filter-box select:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.filter-box select option {
+  background-color: var(--bg-secondary);
+  color: var(--text);
+}
+
+.filter-family-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.show-wheel-checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.figure-filters input[type="checkbox"] {
+  margin: 5px;
+  width: 1.5em;
+  height: 1.5em;
+}
+
+@media (max-width: 768px) {
+  .figure-filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-box {
+    max-width: 100%;
+  }
+
+  .filter-box {
+    justify-content: space-around;
+  }
+}

@@ -56,6 +56,7 @@ export const figures = [
     name: 'kentucky',
     difficulty: 2,
     family: 'enchufla',
+    tags: ['secureToDance'],
     steps: [
       'enchufla ambas manos (siempre juntas)',
       'enchufla izquierda, me abro a la izquierda mano derecha tiene que estar tocando espalda chica',
@@ -304,6 +305,7 @@ export const figures = [
     name: 'enchufla inverso doble',
     family: 'enchufla',
     difficulty: 1,
+    tags: ['secureToDance'],
     steps: [
       'enchufla normal con mano izquierda (la mano en posición de spiderman 🤟🏼)',
       'en tiempo 5 le das 2 vueltas más mientras la diriges a tu derecha y la atrapas con mano derecha',
@@ -417,8 +419,8 @@ export const figures = [
     id: 25,
     name: 'coca mentira',
     family: 'enchufla',
-    womanKnowledge: true,
     difficulty: 2,
+    tags: ['womanKnowledge'],
     steps: [
       'enclufa mientras cambias de lugar con ella',
       'dile que no mientras tu te pasas a la izquierda y ella a la derecha',
@@ -435,8 +437,8 @@ export const figures = [
     id: 26,
     name: 'vacila tu pollo',
     family: 'dile que sí',
-    womanKnowledge: true,
     difficulty: 1,
+    tags: ['womanKnowledge'],
     steps: [
       'en posición de dile que si con tu mano derecha lleva la chica a tu pecho',
       'penduleando baja tu mano izquierda hacia abajo para darle impulso y que ella gire hacia afuera soltándole la mano',
@@ -571,8 +573,8 @@ export const figures = [
     id: 34,
     name: 'va y ven',
     family: 'dile que no',
-    onlyCuban: true,
     difficulty: 2,
+    tags: ['onlyCuban'],
     steps: [
       'empieza en posición de file que no y te separas de tu pareja',
       'Hombres:',
@@ -606,8 +608,8 @@ export const figures = [
     id: 35,
     name: 'saloneo',
     family: 'dile que no',
-    onlyCuban: true,
     difficulty: 1,
+    tags: ['onlyCuban'],
     steps: [
       'empiezas en posición de dile que no y te vas a mantener en esa posición junto con tu pareja',
       'vas a caminar donde está el próximo hombre',
@@ -619,8 +621,8 @@ export const figures = [
     id: 36,
     name: 'que te rodee',
     family: 'dile que no',
-    ornament: true,
     difficulty: 1,
+    tags: ['ornament'],
     steps: [
       'dile que no, pero esta vez la pegas a tu cuerpo mientras levantas el brazo izquierdo',
       'cuando ella vaya pasando, con tu mano derecha pegas su brazo izquierdo a tu cuerpo',
@@ -652,7 +654,6 @@ export const figures = [
     name: 'la ola',
     family: 'enchufla',
     difficulty: 2,
-    new: true,
     steps: [
       'enchufla mientras intercambian posición (tu quedarás a la izquierda)',
       'cuando vayas a terminar ese enchuflamiento vas a cambiar de mano para que queden en saludo de macho',
@@ -668,7 +669,6 @@ export const figures = [
     name: 'entrada europas',
     family: 'sombreros',
     difficulty: 4,
-    new: true,
     steps: [
       'sombrero',
       'en tiempo 7 vas a poner tu mano izquierda en tu hombro derecho',
@@ -688,7 +688,6 @@ export const figures = [
     name: 'europa final',
     family: 'sombreros',
     difficulty: 5,
-    new: true,
     steps: [
       'vas a hacer entrada de europas o lo que quieras para quedar en posición de 82 (mano izquierda atrás bien pegada a tu espalda lo más arriba que puedas y mano derecha con su mano derecha, ella atrás a la derecha de ti).',
       'vas a bajar tu cuerpo rotando a la derecha para pasar por debajo de su brazo izquierdo',
@@ -707,7 +706,6 @@ export const figures = [
     name: 'italia',
     family: 'sombreros',
     difficulty: 2,
-    new: true,
     steps: [
       'vas a hacer entrada de europas o lo que quieras para quedar en posición de 82 (mano izquierda atrás bien pegada a tu espalda lo más arriba que puedas y mano derecha con su mano derecha, ella atrás a la derecha de ti).',
       'vas a soltar mano izquierda',
@@ -725,8 +723,7 @@ export const figures = [
     name: 'venecia',
     family: 'sombreros',
     difficulty: 3,
-    womanKnowledge: true,
-    new: true,
+    tags: ['womanKnowledge'],
     steps: [
       'vas a hacer entrada de europas o lo que quieras para quedar en posición de 82 (mano izquierda atrás bien pegada a tu espalda lo más arriba que puedas y mano derecha con su mano derecha, ella atrás a la derecha de ti).',
       'vas a soltar mano izquierda',

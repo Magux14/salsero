@@ -1,38 +1,35 @@
-import { renderDifficulty } from "./components/Flame";
 import { IoMdDownload } from "react-icons/io";
 import { FaCreativeCommonsShare } from "react-icons/fa";
-import { figures } from "./data";
-import { Link } from "lucide-react";
+import { figures } from "../../data";
+import FigureBadges from "../figure-badges/FigureBadges";
+import { hasTag } from "../../utils/tags";
+import "./figure-modal.scss";
+
+const getVideoUrl = (name) =>
+  `https://archive.org/download/salsero_202608/salsero/${encodeURIComponent(name)}.mp4`;
+
+const getFigureNameById = (id) =>
+  figures.find((f) => f.id === id)?.name || "Figura desconocida";
 
 export default function FigureModal({ figure, onClose }) {
   if (!figure) return null;
-
-  const getCurrentUrl = (name) => {
-    return `https://archive.org/download/salsero_202608/salsero/${encodeURIComponent(name)}.mp4`
-  }
 
   const share = () => {
     const url = `https://magux14.github.io/salsero?id=${figure.id}`;
     navigator.clipboard.writeText(url);
     alert("URL copiada en el portapapeles");
-  }
+  };
 
   const downloadVideo = () => {
-    console.log('Descargando video:', figure.name);
     alert('Debido a las limitaciones de seguridad del navegador, el video se abrirá en una nueva pestaña. Haz clic derecho y selecciona "Guardar video como..." para descargarlo.');
-    const href = getCurrentUrl(figure.name);
     const link = document.createElement("a");
-    link.href = href;
+    link.href = getVideoUrl(figure.name);
     link.target = "_blank";
     link.rel = "noopener";
     document.body.appendChild(link);
     link.click();
     link.remove();
   };
-
-  const getFigureNameById = (id) => {
-    return figures.find((f) => f.id === id)?.name || "Figura desconocida";
-  }
 
   return (
     <div className="modal-overlay" onClick={onClose}>
@@ -42,74 +39,52 @@ export default function FigureModal({ figure, onClose }) {
         <div className="modal-header">
           <h2>{figure.name}</h2>
 
-          <div className="aditional-info-container">
-            {renderDifficulty(figure.difficulty)}
+          <FigureBadges figure={figure} showNewBadge={false} />
 
-            <div className="family-badge-container">
-              {
-                figure.advanced &&
-                <small className={`family-badge family-badge--advanced`}>Avanzados</small>
-              }
-              {
-                figure.womanKnowledge &&
-                <small className={`family-badge family-badge--woman`}>♀ Mujer</small>
-              }
-              {
-                figure.onlyCuban &&
-                <small className={`family-badge family-badge--rueda`}>Rueda</small>
-              }
-              {
-                figure.ornament &&
-                <small className={`family-badge family-badge--adorno`}>Adorno</small>
-              }
-              <small className={`family-badge family-badge--${figure.cssFamily}`}>{figure.family}</small>
-            </div>
-
-          </div>
-          {
-            figure.womanKnowledge &&
+          {hasTag(figure, "womanKnowledge") && (
             <div>
               <small>La follower debe hacer pasos por su cuenta</small>
             </div>
-          }
-          {
-            figure.onlyCuban &&
+          )}
+          {hasTag(figure, "onlyCuban") && (
             <div className="only-cuban-info">
               <small>Esto solo te servirá en ruedas de salsa cubana</small>
             </div>
-          }
+          )}
+          {hasTag(figure, "secureToDance") && (
+            <div className="secure-to-dance-info">
+              <small>Esta figura la puedes utilizar con personas que no bailan salsa, las que NO puedes utilizar con personas normales son las figures que utilicen "70s", "sombreros", "dile que no", "dile que si", "exhibela", más que nada solo puedes utilizar "enchuflas", lo que tienes que hacer es modificarla un poco para bailar con DIAGONALES adaptándola</small>
+            </div>
+          )}
         </div>
-
 
         <div className="modal-body">
           <div className="video-container">
             <video controls width="100%" loop autoPlay preload="none">
-              <source src={getCurrentUrl(figure.name)} type="video/mp4" />
+              <source src={getVideoUrl(figure.name)} type="video/mp4" />
               Tu navegador no soporta videos HTML5
             </video>
           </div>
 
           <div className="steps-list">
-
             <div className="modal-actions">
-              <button className="button button--download" onClick={() => share()}>
+              <button className="button button--download" onClick={share}>
                 Compartir <FaCreativeCommonsShare />
               </button>
-              <button className="button button--share" onClick={() => downloadVideo()}>
+              <button className="button button--share" onClick={downloadVideo}>
                 Descargar <IoMdDownload />
               </button>
             </div>
-            {
-              figure.relatedIds &&
+            {figure.relatedIds && (
               <div className="related-figures">
                 <h3>Figuras relacionadas:</h3>
-                  {figure.relatedIds.map((relatedId, idx) => (
-                      <a href={`?id=${relatedId}`} style={{ color: '#27F5E7', textTransform: 'capitalize' }} key={idx}>
-                        {getFigureNameById(relatedId)}
-                      </a>
-                  ))}
+                {figure.relatedIds.map((relatedId, idx) => (
+                  <a href={`?id=${relatedId}`} className="related-figure-link" key={idx}>
+                    {getFigureNameById(relatedId)}
+                  </a>
+                ))}
               </div>
-            }
+            )}
             <h3>Pasos de la figura:</h3>
             <ol>
               {figure.steps.map((step, idx) => (
