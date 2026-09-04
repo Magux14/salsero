@@ -32,10 +32,10 @@ export default function FigureFilters({
             ))}
           </select>
         </div>
-        <label className="show-wheel-checkbox">
+        {/* <label className="show-wheel-checkbox">
           <span>Rueda:</span>
           <input type="checkbox" checked={showWheel} onChange={onShowWheelChange} />
-        </label>
+        </label> */}
       </div>
     </div>
   );

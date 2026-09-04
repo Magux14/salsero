@@ -572,7 +572,7 @@ export const figures = [
   {
     id: 34,
     name: 'va y ven',
-    family: 'dile que no',
+    family: 'adornos',
     difficulty: 2,
     tags: ['onlyCuban'],
     steps: [
@@ -607,7 +607,7 @@ export const figures = [
   {
     id: 35,
     name: 'saloneo',
-    family: 'dile que no',
+    family: 'adornos',
     difficulty: 1,
     tags: ['onlyCuban'],
     steps: [
@@ -828,6 +828,72 @@ export const figures = [
       'enchuflas con mano derecha',
       'torniquete',
       'al terminar mano derecha a la espalda de la chica para el dile que no',
+    ]
+  },
+  {
+    id: 49,
+    name: 'mozambique',
+    family: 'adornos',
+    difficulty: 1,
+    tags: ['onlyCuban'],
+    relatedIds: [],
+    steps: [
+      'bajas ambas manos',
+      'subes ambas manos',
+      'repites estos 2 pasos',
+      'Si te piden complicarlo:',
+      'Llevas tus 2 manos a tu pecho de forma cruzada',
+      'Ambos codos se mueven para quedar lo más separados del pecho posible mientras que tus manos tocan tu pecho',
+      'subes ambas manos',
+      'repites estos 3 pasos'
+    ]
+  },
+  {
+    id: 50,
+    name: 'la chistosa',
+    family: 'adornos',
+    difficulty: 1,
+    tags: ['onlyCuban'],
+    relatedIds: [],
+    steps: [
+      'vas a aplaudir hacia arriba con los brazos extendidos',
+      'dejas tu brazo izquierdo arriba mientras bajas tu brazo derecho recorriendolo con tu mano derecha de forma "sensual" como dicen los chavos',
+      'repites 2 veces más (luego dicen pausa, entonces solo paras y luego continuas)',
+    ]
+  },
+  {
+    id: 51,
+    name: 'mambo',
+    family: 'adornos',
+    difficulty: 1,
+    tags: ['onlyCuban'],
+    relatedIds: [],
+    steps: [
+      'el mambo lo harás en 4 tiempos, es como marchar en tu lugar empezando con pie izquierdo',
+      'derecho',
+      'izquierdo',
+      'derecho',
+      'Si te lo piden a lo cubano:',
+      'con tu pie izquierdo vas a pisar adelante y a la derecha (cruzado)',
+      'regresas pie',
+      'con el mismo pie izquierdo vas a levartarlo adelante y a la derecha (sin pisar)',
+      'ahora con la otra pierna',
+      'con tu pie derecho vas a pisar adelante y a la izquierda (cruzado)',
+      'regresas pie',
+      'con el mismo pie derecho vas a levartarlo adelante y a la izquierda (sin pisar)',
+    ]
+  },
+  {
+    id: 52,
+    name: 'echeverria',
+    family: 'adornos',
+    difficulty: 1,
+    tags: ['onlyCuban'],
+    relatedIds: [],
+    steps: [
+      'de tu básico en tiempo 3 vas a girar tu pierna izquierda para igualmente rotar a la izquierda',
+      'flexionando las piernas marchas rotando un poco tu cuerpo en cada paso comenzando con la derecha (rotas hacia el mismo pie que está pisando)',
+      'derecha -> izquierda -> derecha (mientras das 3 aplausos)',
     ]
   },
 ];
