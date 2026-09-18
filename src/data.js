@@ -782,7 +782,7 @@ export const figures = [
     name: 'changuereo',
     family: 'enchufla',
     difficulty: 2,
-    tags: ['new', 'secureForDancing'],
+    tags: ['secureForDancing'],
     steps: [
       'Este es un pequeño paso que se puede conectar con varios, pero normalmente eschuflas',
       'al finalizar cambias mano y agarras con mano derecha como saludo de macho',
@@ -810,7 +810,6 @@ export const figures = [
     name: 'sombrero doble con avioneta',
     family: 'sombreros',
     difficulty: 4,
-    tags: ['new'],
     relatedIds: [46, 47],
     steps: [
       'haces sombrero',
@@ -894,6 +893,42 @@ export const figures = [
       'de tu básico en tiempo 3 vas a girar tu pierna izquierda para igualmente rotar a la izquierda',
       'flexionando las piernas marchas rotando un poco tu cuerpo en cada paso comenzando con la derecha (rotas hacia el mismo pie que está pisando)',
       'derecha -> izquierda -> derecha (mientras das 3 aplausos)',
+    ]
+  },
+  {
+    id: 53,
+    name: '82 complicado',
+    family: 'sombreros',
+    difficulty: 4,
+    tags: ['new', 'womanKnowledge'],
+    relatedIds: [10],
+    steps: [
+      'haces un 82 normal hasta llegar a posición de 82 (ve la referencia si es necesario)',
+      'con tu codo derecho vas ampujar para arriba el brazo izquierda de la follower mientras sueltas su mano izquierda',
+      'ella subirá la mano por si sola (con adorno) llevando su mano hacia adelante',
+      'pasas tu mano izquierda hacia adelante para cachar de vuelta su mano izquierda (sus manos siguen conectadas)',
+      'vas a rotar hacia la izquierda y vas a enchuflar a la chica subiendo tu mano izquierda en dirección contraria a las agujas del reloj para que ahora ella quede en posición de 82',
+      'en tiempo 7 bajas su mano y en tiempo 1 NO vas a pisar enfrente si no atrás, llevando tu mano izquierda por arriba de tu cabeza y regresandola a la pocisión original',
+      'la vas a enchuflar en dirección a las agujas del reloj',
+      'terminar con sombrero',
+    ]
+  },
+  {
+    id: 54,
+    name: 'vacílala con la ola (avance)',
+    family: 'dile que si',
+    difficulty: 3,
+    tags: ['new', 'womanKnowledge'],
+    relatedIds: [26],
+    steps: [
+      'la vas a vacilar (pero esta vez la chica dará 3 vueltas en lugar de 2, checa la referencia si tienes dudas)',
+      'cuando ella llegue a la tercera vuelta tu vas a extender tu mano derecha de tal forma que ella con su mano derecha te agarre la mano (entiende tu mano mucho para que la capte)',
+      'la exhíbes y cuando ella esté viendo en dirección contraria a la rueda vas a meter tu dedo medio de la mano izquierda en tu antebrazo derecho (haz forma de spiderman), ',
+      'terminas el exhíbela coronándola',
+      'en tiempo 1 sacas tu dedo medio de su antebrazo para levantar tu brazo y avanzas con tu pierna izquierda para adelante para exhibirla nuevamente con tu mano derecha y antes de que termine vas a bajar tu brazo izquierdo adentro de tu antebrazo derecho',
+      'Estarán como "esposos" y rotaran hacia la derecha para mirar a la rueda terminando en tiempo 7',
+      'ahora empezando de nuevo con los tiempos en tiempo 1 siguen rotando pero esta vez el hombre seguirá viendo al centro de la rueda dejando que la chava llegue a posición de dile que no',
+      'dile que no'
     ]
   },
 ];
