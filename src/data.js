@@ -900,7 +900,7 @@ export const figures = [
     name: '82 complicado',
     family: 'sombreros',
     difficulty: 4,
-    tags: ['new', 'womanKnowledge'],
+    tags: ['womanKnowledge'],
     relatedIds: [10],
     steps: [
       'haces un 82 normal hasta llegar a posición de 82 (ve la referencia si es necesario)',
@@ -918,7 +918,7 @@ export const figures = [
     name: 'vacílala con la ola (avance)',
     family: 'dile que si',
     difficulty: 3,
-    tags: ['new', 'womanKnowledge'],
+    tags: ['womanKnowledge'],
     relatedIds: [26],
     steps: [
       'la vas a vacilar (pero esta vez la chica dará 3 vueltas en lugar de 2, checa la referencia si tienes dudas)',
@@ -929,6 +929,57 @@ export const figures = [
       'Estarán como "esposos" y rotaran hacia la derecha para mirar a la rueda terminando en tiempo 7',
       'ahora empezando de nuevo con los tiempos en tiempo 1 siguen rotando pero esta vez el hombre seguirá viendo al centro de la rueda dejando que la chava llegue a posición de dile que no',
       'dile que no'
+    ]
+  },
+  {
+    id: 55,
+    name: 'que te rodee de las 3 formas',
+    family: 'dile que no',
+    difficulty: 2,
+    tags: ['new'],
+    relatedIds: [],
+    steps: [
+    ]
+  },
+  {
+    id: 56,
+    name: 'el son',
+    family: 'posición cerrada',
+    difficulty: 1,
+    tags: ['new', 'womanKnowledge'],
+    relatedIds: [],
+    steps: [
+    ]
+  },
+  {
+    id: 57,
+    name: 'amague',
+    family: 'posición cerrada',
+    difficulty: 1,
+    tags: ['new', 'womanKnowledge'],
+    relatedIds: [],
+    steps: [
+    ]
+  },
+  {
+    id: 58,
+    name: 'evelyn',
+    family: 'enchufla',
+    difficulty: 2,
+    tags: ['new'],
+    relatedIds: [],
+    steps: [
+      'enchufla y luego comienza con la forma'
+    ]
+  },
+  {
+    id: 59,
+    name: 'vacílala y engancha',
+    family: 'dile que si',
+    difficulty: 4,
+    tags: ['new', 'womanKnowledge'],
+    relatedIds: [],
+    steps: [
     ]
   },
 ];

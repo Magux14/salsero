@@ -101,7 +101,8 @@ export default function FigureModal({ figure, onClose }) {
                 </>
               }
             </div>
-            {figure.relatedIds && (
+            {
+              figure.relatedIds?.length > 0 &&
               <div className="related-figures">
                 <h3>Figuras relacionadas:</h3>
                 {figure.relatedIds.map((relatedId, idx) => (
@@ -110,12 +111,15 @@ export default function FigureModal({ figure, onClose }) {
                   </a>
                 ))}
               </div>
-            )}
+            }
             <h3>Pasos de la figura:</h3>
             <ol>
               {figure.steps.map((step, idx) => (
                 <li key={idx} className="step">{step}</li>
               ))}
+              {
+                !figure.steps.length && <div className="step">No hay pasos disponibles para esta figura.</div>
+              }
             </ol>
           </div>
         </div>
