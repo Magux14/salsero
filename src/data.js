@@ -75,7 +75,7 @@ export const figures = [
     difficulty: 3,
     family: 'dile que sí',
     steps: [
-      'posición de dile que si',
+      'posición de dile que sí',
       'inicia como 70 (nunca se sueltan manos)',
       'ambas manos, vuelta con mano izquierda arriba hacia AFUERA, mano derecha abajo',
       'enchuflo ambas manos',
@@ -94,7 +94,7 @@ export const figures = [
     family: 'dile que sí',
     difficulty: 3,
     steps: [
-      'posición de dile que si',
+      'posición de dile que sí',
       'Inicia como 70 (nunca se sueltan manos)',
       'ambas manos, vuelta con mano izquierda arriba hacia AFUERA, mano derecha abajo',
       'enchuflo ambas manos',
@@ -282,7 +282,7 @@ export const figures = [
     family: 'dile que sí',
     difficulty: 4,
     steps: [
-      'cambio a dile que si (2 manos agarradas todo el tiempo)',
+      'cambio a dile que sí (2 manos agarradas todo el tiempo)',
       '70, vuelta ella hacía adentro',
       'cuando ella termine de girar caminas rodeandola',
       'cuando llegues a un 80% del lugar original de donde estabas enchuflas',
@@ -338,7 +338,7 @@ export const figures = [
     family: 'dile que sí',
     difficulty: 2,
     steps: [
-      'posición de dile que si',
+      'posición de dile que sí',
       ' jalas tu mano hacia ti y a la izquierda',
       'la chica girará enrollándose hacía ti mágicamente (en serio no se como ellas sabrán eso)',
       'cuando se enrrolle tu mano derecha quedará en su omoplato derecho',
@@ -353,7 +353,7 @@ export const figures = [
     family: 'dile que sí',
     difficulty: 3,
     steps: [
-      'posición de dile que si (ambas manos no se sueltan)',
+      'posición de dile que sí (ambas manos no se sueltan)',
       'enchufla con ambas manos',
       'marcho marcho marcho a la derecha',
       'con tu mano izquierda enchuflala hacia adentro y pasala a tu derecha mientras tu mano derecha queda abajo y atrás de ella',
@@ -440,7 +440,7 @@ export const figures = [
     difficulty: 1,
     tags: ['womanKnowledge'],
     steps: [
-      'en posición de dile que si con tu mano derecha lleva la chica a tu pecho',
+      'en posición de dile que sí con tu mano derecha lleva la chica a tu pecho',
       'penduleando baja tu mano izquierda hacia abajo para darle impulso y que ella gire hacia afuera soltándole la mano',
       'ella girará por si sola 2 veces y levantá los brazos para hacer un adorno',
       'cáchala en la segunda vuelta',
@@ -916,7 +916,7 @@ export const figures = [
   {
     id: 54,
     name: 'vacílala con la ola (avance)',
-    family: 'dile que si',
+    family: 'dile que sí',
     difficulty: 3,
     tags: ['womanKnowledge'],
     relatedIds: [26],
@@ -975,7 +975,7 @@ export const figures = [
   {
     id: 59,
     name: 'vacílala y engancha',
-    family: 'dile que si',
+    family: 'dile que sí',
     difficulty: 4,
     tags: ['new', 'womanKnowledge'],
     relatedIds: [],
