@@ -914,29 +914,11 @@ export const figures = [
     ]
   },
   {
-    id: 54,
-    name: 'vacílala con la ola (avance)',
-    family: 'dile que sí',
-    difficulty: 3,
-    tags: ['womanKnowledge'],
-    relatedIds: [26],
-    steps: [
-      'la vas a vacilar (pero esta vez la chica dará 3 vueltas en lugar de 2, checa la referencia si tienes dudas)',
-      'cuando ella llegue a la tercera vuelta tu vas a extender tu mano derecha de tal forma que ella con su mano derecha te agarre la mano (entiende tu mano mucho para que la capte)',
-      'la exhíbes y cuando ella esté viendo en dirección contraria a la rueda vas a meter tu dedo medio de la mano izquierda en tu antebrazo derecho (haz forma de spiderman), ',
-      'terminas el exhíbela coronándola',
-      'en tiempo 1 sacas tu dedo medio de su antebrazo para levantar tu brazo y avanzas con tu pierna izquierda para adelante para exhibirla nuevamente con tu mano derecha y antes de que termine vas a bajar tu brazo izquierdo adentro de tu antebrazo derecho',
-      'Estarán como "esposos" y rotaran hacia la derecha para mirar a la rueda terminando en tiempo 7',
-      'ahora empezando de nuevo con los tiempos en tiempo 1 siguen rotando pero esta vez el hombre seguirá viendo al centro de la rueda dejando que la chava llegue a posición de dile que no',
-      'dile que no'
-    ]
-  },
-  {
     id: 55,
     name: 'que te rodee de las 3 formas',
     family: 'dile que no',
     difficulty: 2,
-    tags: ['new'],
+    tags: [],
     relatedIds: [],
     steps: [
     ]
@@ -946,7 +928,7 @@ export const figures = [
     name: 'el son',
     family: 'posición cerrada',
     difficulty: 1,
-    tags: ['new', 'womanKnowledge'],
+    tags: ['womanKnowledge'],
     relatedIds: [],
     steps: [
     ]
@@ -956,7 +938,7 @@ export const figures = [
     name: 'amague',
     family: 'posición cerrada',
     difficulty: 1,
-    tags: ['new', 'womanKnowledge'],
+    tags: ['womanKnowledge'],
     relatedIds: [],
     steps: [
     ]
@@ -966,7 +948,7 @@ export const figures = [
     name: 'evelyn',
     family: 'enchufla',
     difficulty: 2,
-    tags: ['new'],
+    tags: [],
     relatedIds: [],
     steps: [
       'enchufla y luego comienza con la forma'
@@ -977,7 +959,17 @@ export const figures = [
     name: 'vacílala y engancha',
     family: 'dile que sí',
     difficulty: 4,
-    tags: ['new', 'womanKnowledge'],
+    tags: ['womanKnowledge'],
+    relatedIds: [],
+    steps: [
+    ]
+  },
+  {
+    id: 54,
+    name: 'coquito con melao (avance)',
+    family: 'dile que sí',
+    difficulty: 5,
+    tags: ['new'],
     relatedIds: [],
     steps: [
     ]
