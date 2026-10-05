@@ -974,4 +974,14 @@ export const figures = [
     steps: [
     ]
   },
+  {
+    id: 60,
+    name: 'el 7',
+    family: 'dile que no',
+    difficulty: 1,
+    tags: ['new', 'onlyCuban', 'womanKnowledge'],
+    relatedIds: [],
+    steps: [
+    ]
+  },
 ];
