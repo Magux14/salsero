@@ -959,14 +959,14 @@ export const figures = [
     name: 'vacílala y engancha',
     family: 'dile que sí',
     difficulty: 4,
-    tags: ['womanKnowledge'],
+    tags: ['new', 'womanKnowledge'],
     relatedIds: [],
     steps: [
     ]
   },
   {
     id: 54,
-    name: 'coquito con melao (avance)',
+    name: 'coquito con melao',
     family: 'dile que sí',
     difficulty: 5,
     tags: ['new'],
@@ -980,6 +980,16 @@ export const figures = [
     family: 'dile que no',
     difficulty: 1,
     tags: ['new', 'onlyCuban', 'womanKnowledge'],
+    relatedIds: [],
+    steps: [
+    ]
+  },
+  {
+    id: 61,
+    name: 'caracol con alas',
+    family: 'sombreros',
+    difficulty: 4,
+    tags: ['new', 'womanKnowledge'],
     relatedIds: [],
     steps: [
     ]
