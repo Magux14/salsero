@@ -914,6 +914,16 @@ export const figures = [
     ]
   },
   {
+    id: 54,
+    name: 'coquito con melao',
+    family: 'dile que sí',
+    difficulty: 5,
+    tags: ['new'],
+    relatedIds: [],
+    steps: [
+    ]
+  },
+  {
     id: 55,
     name: 'que te rodee de las 3 formas',
     family: 'dile que no',
@@ -965,16 +975,6 @@ export const figures = [
     ]
   },
   {
-    id: 54,
-    name: 'coquito con melao',
-    family: 'dile que sí',
-    difficulty: 5,
-    tags: ['new'],
-    relatedIds: [],
-    steps: [
-    ]
-  },
-  {
     id: 60,
     name: 'el 7',
     family: 'dile que no',
@@ -990,6 +990,46 @@ export const figures = [
     family: 'sombreros',
     difficulty: 4,
     tags: ['new', 'womanKnowledge'],
+    relatedIds: [],
+    steps: [
+    ]
+  },
+  {
+    id: 62,
+    name: 'una para abajo',
+    family: 'dile que no',
+    difficulty: 1,
+    tags: ['onlyCuban'],
+    relatedIds: [],
+    steps: [
+    ]
+  },
+  {
+    id: 63,
+    name: 'las 3 pelotas',
+    family: 'enchufla',
+    difficulty: 1,
+    tags: ['onlyCuban'],
+    relatedIds: [],
+    steps: [
+    ]
+  },
+  {
+    id: 64,
+    name: 'enchufla doble',
+    family: 'enchufla',
+    difficulty: 1,
+    tags: [],
+    relatedIds: [],
+    steps: [
+    ]
+  },
+  {
+    id: 65,
+    name: 'exhíbela',
+    family: 'dile que no',
+    difficulty: 1,
+    tags: [],
     relatedIds: [],
     steps: [
     ]
