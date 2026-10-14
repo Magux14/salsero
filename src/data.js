@@ -918,7 +918,7 @@ export const figures = [
     name: 'coquito con melao',
     family: 'dile que sí',
     difficulty: 5,
-    tags: ['new'],
+    tags: [],
     relatedIds: [],
     steps: [
     ]
@@ -969,7 +969,7 @@ export const figures = [
     name: 'vacílala y engancha',
     family: 'dile que sí',
     difficulty: 4,
-    tags: ['new', 'womanKnowledge'],
+    tags: ['womanKnowledge'],
     relatedIds: [],
     steps: [
     ]
@@ -979,7 +979,7 @@ export const figures = [
     name: 'el 7',
     family: 'dile que no',
     difficulty: 1,
-    tags: ['new', 'onlyCuban', 'womanKnowledge'],
+    tags: ['onlyCuban', 'womanKnowledge'],
     relatedIds: [],
     steps: [
     ]
@@ -1032,6 +1032,19 @@ export const figures = [
     tags: [],
     relatedIds: [],
     steps: [
+    ]
+  },
+  {
+    id: 66,
+    name: 'vacílala y vete',
+    family: 'dile que sí',
+    difficulty: 1,
+    tags: ['new', 'onlyCuban', 'womanKnowledge'],
+    relatedIds: [],
+    steps: [
+      'vacílala',
+      'camina por enfrente de ella (a la derecha) hasta llegar a la siguiente follower',
+      'dile que no'
     ]
   },
 ];
