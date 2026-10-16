@@ -249,7 +249,7 @@ export const figures = [
   {
     id: 15,
     name: 'coca cola',
-    family: 'enchufla',
+    family: 'dile que no',
     difficulty: 2,
     steps: [
       'posición de dile que no',
@@ -1045,6 +1045,46 @@ export const figures = [
       'vacílala',
       'camina por enfrente de ella (a la derecha) hasta llegar a la siguiente follower',
       'dile que no'
+    ]
+  },
+  {
+    id: 67,
+    name: 'coca-cola (hombro)',
+    family: 'dile que no',
+    difficulty: 2,
+    tags: ['new'],
+    relatedIds: [],
+    steps: [
+    ]
+  },
+  {
+    id: 68,
+    name: 'coca-cola (torso)',
+    family: 'dile que no',
+    difficulty: 2,
+    tags: ['new'],
+    relatedIds: [],
+    steps: [
+    ]
+  },
+  {
+    id: 69,
+    name: 'coca-cola (mentira)',
+    family: 'dile que no',
+    difficulty: 2,
+    tags: ['new', 'womanKnowledge'],
+    relatedIds: [],
+    steps: [
+    ]
+  },
+  {
+    id: 70,
+    name: 'secuencia del son (avance)',
+    family: 'posición cerrada',
+    difficulty: 4,
+    tags: ['new'],
+    relatedIds: [],
+    steps: [
     ]
   },
 ];
