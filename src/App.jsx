@@ -24,7 +24,7 @@ function App() {
         const matchesFamily = filterFamily === 'todos' || fig.family === filterFamily
         return matchesSearch && matchesFamily
       })
-      .sort((a, b) => (hasTag(b, 'new') - hasTag(a, 'new')) || b.difficulty - a.difficulty);
+      .sort((a, b) => (hasTag(b, 'new') - hasTag(a, 'new')) || b.id - a.id);
   }, [search, filterFamily, showWheel]);
 
   useEffect(() => {
