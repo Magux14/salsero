@@ -1110,9 +1110,9 @@ export const figures = [
   },
   {
     id: 71,
-    name: 'prismas (avance)',
+    name: 'prismas',
     family: 'enchufla',
-    difficulty: 4,
+    difficulty: 5,
     tags: ['new'],
     relatedIds: [],
     steps: [
@@ -1125,9 +1125,34 @@ export const figures = [
       'avanzas al follower hacia adelante',
       'desenrollas',
       'con tu mano derecha vas haciendo un círculo de izquierda a derecha, abajo hacía arriba para no lastimar al follower',
-      'randem (mano derecha) caminado',
+      'randem (mano derecha) pero a la mitad del randem te vas a agachar y luego a subir para que se vea chido',
       'enchufla (la follower debe de estar a tu izquierda)',
       'peínala',
+    ]
+  },
+    {
+    id: 72,
+    name: 'caramelo (avance)',
+    family: 'dile que sí',
+    difficulty: 5,
+    tags: ['new'],
+    relatedIds: [],
+    steps: [
+      'dile que si a dos manos',
+      'primero pasas la mano derecha y terminará en su hombro derecho',
+      'luego la mano izquierda (está la mantendrás arriba) hasta que le des la vuelta completa y la reposarás en su antebrazo derecho',
+      'levantas brazo derecho para formar una escuadra',
+      'la llevas a rodeo con brazo derecho mientras con tus pies marcas un "rodea la base"',
+      'cuando ella llegue a la izquierda haces un ganchito de hombre izquierda con izquierda',
+      'sueltas hanchito izquierdo',
+      'cuando ella llegue a la derecha haces un ganchito de hombre derecha con derecha',
+      'quitas ganchito derecho',
+      'con brazo izquierdo la enrollas hacia la izuiqerda y terminarán viendo hacia la izquierda tu brazo tiene que estar firme delante de ella con la palma extendida viendo hacia ella',
+      'te haces un poquito para adelante y luego la regresas',
+      'la giras hacia la derecha hasta llegar a posición de 70 mientras lo caminas',
+      'entras a 70 complicado y sueltas mano derecha',
+      'exhibes',
+      '',
     ]
   },
 ];
