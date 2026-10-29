@@ -1,0 +1,65 @@
+.figure-badges {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.family-badge-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.family-badge {
+  background-color: var(--primary);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: .8rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.family-badge--dile-que-si {
+  background-color: rgb(15, 173, 15);
+}
+
+.family-badge--sombreros {
+  background-color: rgb(201, 111, 8);
+}
+
+.family-badge--enchufla {
+  background-color: rgb(15, 110, 173);
+}
+
+.family-badge--dile-que-no {
+  background-color: rgb(95, 27, 32);
+}
+
+.family-badge--woman {
+  background-color: rgb(211, 80, 189);
+  align-self: flex-end;
+}
+
+.family-badge--rueda {
+  background-color: rgb(104, 33, 133);
+  align-self: flex-end;
+}
+
+.family-badge--adorno {
+  background-color: rgb(133, 123, 33);
+  align-self: flex-end;
+}
+
+.family-badge--secure-for-dancing {
+  background-color: rgb(107, 21, 54);
+  align-self: flex-end;
+}
+
+.family-badge--advanced {
+  background-color: rgb(49, 23, 196);
+  align-self: flex-end;
+}
