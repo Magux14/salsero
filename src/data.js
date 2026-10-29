@@ -1112,7 +1112,7 @@ export const figures = [
     id: 71,
     name: 'prismas',
     family: 'enchufla',
-    difficulty: 5,
+    difficulty: 4,
     tags: ['new'],
     relatedIds: [],
     steps: [
@@ -1134,7 +1134,7 @@ export const figures = [
     id: 72,
     name: 'caramelo',
     family: 'dile que sí',
-    difficulty: 4,
+    difficulty: 5,
     tags: ['new'],
     relatedIds: [],
     steps: [
@@ -1157,11 +1157,11 @@ export const figures = [
   },
   {
     id: 73,
-    name: '89 (avance)',
+    name: '89',
     family: 'sombreros',
-    difficulty: 3,
+    difficulty: 5,
     tags: ['new'],
-    relatedIds: [],
+    relatedIds: [10],
     steps: [
       'sombrero',
       'alarde empieza en tiempo 6 y termina en tiempo 7',
@@ -1169,7 +1169,12 @@ export const figures = [
       'randem a 82',
       'rodea la base (derecha) mientras subes tu mano izquierda atrás de su cabeza',
       'paseillo (en el tiempo 3 bajas tu mano izquierda para agarrar esa misma mano pero por debajo de su hombro como en europa)',
-      'dile que si y terminas con tu mano izquierda atrás de tu cabeza (deberías estar viendo a la rueda en este punto)',
+      'respiras, alzas tu codo izquierda y jalas a la chica para que entre en esa abertura',
+      'van a quedar de espaldas por medio segundo',
+      'alzas brazo derecho para que siga pasando',
+      'terminarás en posición de 82, lo terminas',
+      'enchuflas',
+      'encestas a sombrero',
     ]
   },
 ];
