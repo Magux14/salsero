@@ -1177,4 +1177,28 @@ export const figures = [
       'encestas a sombrero',
     ]
   },
+  {
+    id: 74,
+    name: '70 habanero',
+    family: 'dile que sí',
+    difficulty: 4,
+    tags: ['new'],
+    relatedIds: [],
+    steps: [
+      '70',
+      'enchuflas',
+      'randem (mano derecha arriba, mano izquierda abajo) y terminas con mano derecha arriba de mesero',
+      'la mandas a rodeo',
+      'cuando esté enfrente de ti un poco a la derecha subes tu mano izquierda y bajas la derecha para continuar con el rodeo',
+      'cuando el follower llegue a estar de nuevo delante de ti vas a hacer un dile que si con mano izquierda (tu también vas a rotar a la derecha tu mano derecha sigue atras)',
+      'en cierto punto ambos tienen que estar de espaldas con los brazos abajo',
+      'vas a levartar tu brazo derecho para continuar con la vuelta (estarás brazo derecha enfrente de ella y brazo izquierdo en tu espalda tomando su mano derecha)',
+      'empezando en el conteno 1, 2, 3 seguirás caminando mientras llevas tu mano derecha atrás de su hombre izquierdo (para ella tiene que verse como si ella solita se estuviera agarrando su hombro derecho con su mano izquierda)',
+      'en 5, 6, 7 sueltas mano izquierda y vas a pasar como cuerda de boxeo por debajo de su brazo derecho de izquierda a derecha',
+      'cuando termines de pasar vuelves a tomar su mano pero ahora por enfrente (tu mano izuiqerda ella mano derecha)',
+      'enchuflas',
+      'gancho de mujer con tu brazo derecho',
+      'dile que no',
+    ]
+  },
 ];
