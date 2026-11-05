@@ -1200,5 +1200,5 @@ export const figures = [
       'gancho de mujer con tu brazo derecho',
       'dile que no',
     ]
-  },
+  }
 ];
