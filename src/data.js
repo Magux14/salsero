@@ -989,7 +989,7 @@ export const figures = [
     name: 'caracol con alas',
     family: 'sombreros',
     difficulty: 4,
-    tags: ['new', 'womanKnowledge'],
+    tags: ['womanKnowledge'],
     relatedIds: [],
     steps: [
     ]
@@ -1039,7 +1039,7 @@ export const figures = [
     name: 'vacílala y vete',
     family: 'dile que sí',
     difficulty: 1,
-    tags: ['new', 'onlyCuban', 'womanKnowledge'],
+    tags: ['onlyCuban', 'womanKnowledge'],
     relatedIds: [],
     steps: [
       'vacílala',
@@ -1052,7 +1052,7 @@ export const figures = [
     name: 'coca-cola (hombro)',
     family: 'dile que no',
     difficulty: 2,
-    tags: ['new'],
+    tags: [],
     relatedIds: [],
     steps: [
     ]
@@ -1062,7 +1062,7 @@ export const figures = [
     name: 'coca-cola (torso)',
     family: 'dile que no',
     difficulty: 2,
-    tags: ['new'],
+    tags: [],
     relatedIds: [],
     steps: [
     ]
@@ -1072,7 +1072,7 @@ export const figures = [
     name: 'coca-cola (mentira)',
     family: 'dile que no',
     difficulty: 2,
-    tags: ['new', 'womanKnowledge'],
+    tags: ['womanKnowledge'],
     relatedIds: [],
     steps: [
     ]
@@ -1082,7 +1082,7 @@ export const figures = [
     name: 'secuencia del son',
     family: 'posición cerrada',
     difficulty: 3,
-    tags: ['new'],
+    tags: [],
     relatedIds: [],
     steps: [
       'básico',
@@ -1199,6 +1199,38 @@ export const figures = [
       'enchuflas',
       'gancho de mujer con tu brazo derecho',
       'dile que no',
+    ]
+  },
+  {
+    id: 75,
+    name: '88 2 3 9',
+    family: 'sombreros',
+    difficulty: 5,
+    tags: ['new'],
+    relatedIds: [8, 10, 16, 73],
+    steps: [
+    ]
+  },
+  {
+    id: 76,
+    name: 'vayamo por el hoyo',
+    family: 'enchufla',
+    difficulty: 4,
+    tags: ['new'],
+    relatedIds: [],
+    steps: [
+      'changuereo',
+      'encestas brazo derecho y pides mano izquierda',
+      'mandas a rodeo por enfrente e izquierda',
+      'cuando ella llegue a tu derecha la jalas hacía andetro para que pase por adentro de tu brazo derecho (rotas tu cuerpo mirándola para que entre)',
+      'en un punto quedarán espalda con espalda',
+      'levantas brazo izquierdo (rotando tu cuerpo mirándola para que salga)',
+      'quedarás con ambas manos atrás (las posicionas lo más arriba que puedas)',
+      'rotas hacía la derecha pasando por debajo de sus brazos dejando las manos atrás de tu espalda',
+      'y sales a posición de 82',
+      'completas el 82',
+      'enchuflas',
+      'encestas',
     ]
   }
 ];
