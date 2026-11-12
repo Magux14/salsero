@@ -1232,5 +1232,21 @@ export const figures = [
       'enchuflas',
       'encestas',
     ]
+  },
+  {
+    id: 77,
+    name: 'sabor',
+    family: 'enchufla',
+    difficulty: 2,
+    tags: ['new'],
+    relatedIds: [],
+    steps: [
+      'enchufla a la cadera (una mano) x2',
+      'ahora todo lo siguiente pasará en tiempo 1-7',
+      'sales con randem',
+      'enchuflas',
+      'torniquete',
+      'dile que no'
+    ]
   }
 ];
