@@ -1,8 +1,15 @@
 .app-header {
+  display: flex;
+  justify-content: center;
   text-align: center;
   margin-bottom: 20px;
   padding-bottom: 20px;
   border-bottom: 2px solid var(--primary);
+}
+
+.app-header-logo {
+  width: 100%;
+  max-width: 500px;
 }
 
 .app-header h1 {

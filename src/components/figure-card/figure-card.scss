@@ -19,7 +19,7 @@
   justify-content: space-between;
   align-items: start;
   margin-bottom: 15px;
-  gap: 5px;
+  gap: 3px;
 
   h2, h3 {
     text-transform: capitalize;
@@ -39,7 +39,7 @@
 .view-btn {
   width: 100%;
   padding: 10px;
-  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  background: linear-gradient(135deg, #AD0780, var(--primary-dark));
   color: white;
   border: none;
   border-radius: 6px;
@@ -55,8 +55,6 @@
 
 @media (max-width: 480px) {
   .card-header {
-    gap: 10px;
-
     h3 {
       text-align: left;
     }

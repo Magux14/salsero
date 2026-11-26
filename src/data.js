@@ -1113,7 +1113,7 @@ export const figures = [
     name: 'prismas',
     family: 'enchufla',
     difficulty: 4,
-    tags: ['new'],
+    tags: [],
     relatedIds: [],
     steps: [
       'enchufla',
@@ -1135,7 +1135,7 @@ export const figures = [
     name: 'caramelo',
     family: 'dile que sí',
     difficulty: 5,
-    tags: ['new'],
+    tags: [],
     relatedIds: [],
     steps: [
       'dile que si a dos manos',
@@ -1160,7 +1160,7 @@ export const figures = [
     name: '89',
     family: 'sombreros',
     difficulty: 5,
-    tags: ['new'],
+    tags: [],
     relatedIds: [10],
     steps: [
       'sombrero',
@@ -1182,7 +1182,7 @@ export const figures = [
     name: '70 habanero',
     family: 'dile que sí',
     difficulty: 4,
-    tags: ['new'],
+    tags: [],
     relatedIds: [],
     steps: [
       '70',
@@ -1206,7 +1206,7 @@ export const figures = [
     name: '88 2 3 9',
     family: 'sombreros',
     difficulty: 5,
-    tags: ['new'],
+    tags: [],
     relatedIds: [8, 10, 16, 73],
     steps: [
     ]
@@ -1216,7 +1216,7 @@ export const figures = [
     name: 'vayamo por el hoyo',
     family: 'enchufla',
     difficulty: 4,
-    tags: ['new'],
+    tags: [],
     relatedIds: [],
     steps: [
       'changuereo',
@@ -1238,7 +1238,7 @@ export const figures = [
     name: 'sabor',
     family: 'enchufla',
     difficulty: 2,
-    tags: ['new'],
+    tags: [],
     relatedIds: [],
     steps: [
       'enchufla a la cadera (una mano) x2',
@@ -1247,6 +1247,29 @@ export const figures = [
       'enchuflas',
       'torniquete',
       'dile que no'
+    ]
+  },
+   {
+    id: 78,
+    name: 'pirinola',
+    family: 'enchufla',
+    difficulty: 4,
+    tags: ['new'],
+    relatedIds: [],
+    steps: [
+      'enchufla',
+      'torniquete (terminas con agarre de evelyn pero el suave para salir a un 88',
+      'exhibe mentira (2 manos y regresas en tiempo 5)',
+      'exhibe 2 manos y entra a posición de 88',
+      'caminala (rotando)',
+      'la coronas con mano izquierda en tiempo 3 mientras siguen rotando',
+      'en tiempo 1 ambos deben de estar mirando al centro de la rueda (sigues rotando)',
+      'pon tu mano ziquierda en su hombro derecho y tu mano derecha en su cadera y la sigues caminando hasta tiempo 3',
+      'la vacilas y atrapas en posición de dile que no',
+      'dile que no con agarre de pinza pero hacia afuera (mano izquierda)',
+      'la pasas para atrás con tu mano izquierda como si te rodeara (de izquierda a derecha)',
+      'en tiempo 3 la exhibes con mano derecha y la coronas (tiempo 7)',
+      'dile que no',
     ]
   }
 ];
